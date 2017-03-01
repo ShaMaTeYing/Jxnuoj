@@ -1,0 +1,135 @@
+﻿<extend name="../Public/base" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/judge.css" />
+</block>
+<block name="main">
+	<div class="judge">
+		<div class="judge-status">实时评测状态</div>
+		<div class="search">
+			<form action="__APP__/Judge/showRealTimeEvaluation" method="post"> 
+				问题ID<input type="text" name="problemId" />
+				昵称<input type="text" name="anthor" />
+				语言：
+				<select name="language">
+					<option value="C++">C++</option>
+					<option value="C">C</option>
+					<option value="Java">Java</option>
+					<option value="PHP">PHP</option>
+				</select>
+				状态:
+				<select name="status">
+					<option value="0">Accepted</option>
+					<option value="2">Wrong Answer</option>
+					<option value="1">Compile Error</option>
+					<option value="3">Time Limit Exceeded</option>
+				</select>
+				<input class="submit" type="submit" value="搜索"> 
+			</form>
+		</div>
+		<div class="list">
+			<table class="table table-bordered mystyle">
+				<tr>
+					<th>运行ID</th>
+					<th>提交时间</th>
+					<th>评测结果</th>
+					<th>问题ID</th>
+					<th>运行时间</th>
+					<th>运行内存</th>
+					<th>代码长度</th>
+					<th>语言</th>
+					<th>昵称</th>
+				</tr>
+				<volist name='list' id='vo'>
+					<tr>
+						<td><{$vo.id}></td>
+						<td><{$vo.submit_time|date="Y-m-d H:i",###}></td>
+						<td>
+		<!--$resultStatus[0]='Accepted';
+		$resultStatus[1]='Wrong Answer';
+		$resultStatus[2]='Time Limit Exceeded';
+		$resultStatus[3]='Memory Limit Exceeded';
+		$resultStatus[4]='Runtime Error';
+		$resultStatus[5]='Compilation Error';
+		$resultStatus[6]='Output Limit Exceeded';
+		$resultStatus[7]='Input Limit Exceeded';
+		$resultStatus[8]='pending';
+		$resultStatus[9]='Compiling';
+		$resultStatus[10]='Runing';-->
+							
+							<eq name="vo.judge_status" value="0">
+								<span class="accepted">Accepted</span>
+							</eq>
+							<eq name="vo.judge_status" value="1">
+								<span class="wrong-answer">Wrong Answer</span>
+							</eq>
+							<eq name="vo.judge_status" value="2">
+								<span class="time-limit-exceeded">Time Limit Exceeded</span>
+							</eq>
+							<eq name="vo.judge_status" value="3">
+								<span class="memeory-limit-exceeded">Memory Limit Exceeded</span>
+							</eq>
+							<eq name="vo.judge_status" value="4">
+								<span class="runtime-error">Runtime Error</span>
+							</eq>
+							<eq name="vo.judge_status" value="5">
+								<span class="compilation-error">Compilation Error</span>
+							</eq>
+							<eq name="vo.judge_status" value="6">
+								<span class="output-limit-exceeded">Output Limit Exceeded</span>
+							</eq>
+							<eq name="vo.judge_status" value="7">
+								<span class="input-limit-exceeded">Input Limit Exceeded</span>
+							</eq>
+							<eq name="vo.judge_status" value="8">
+								<span class="pending">Pending</span>
+							</eq>
+							<eq name="vo.judge_status" value="9">
+								<span class="compiling">Compiling</span>
+							</eq>
+							<eq name="vo.judge_status" value="10">
+								<span class="runing">Runing</span>
+							</eq>
+						
+						</td>
+						
+						<td>
+							<a href="__APP__/Index/showProblem/id/<{$vo.problem_id}>">
+							<{$vo.problem_id}>
+							</a>
+						</td>
+						
+						<td><{$vo.exe_time}> MS</td>
+						<td><{$vo.exe_memory}> KB</td>
+						<td>
+							<!--<eq name="vo.user_id" value="$myId">
+								<a href="__APP__/Judge/showUserCode/id/<{$vo.id}>"><{$vo.code_len}>B</a>
+							<else/>
+							
+								<eq name="$myRoot" value="2">
+									<a href="__APP__/Judge/showUserCode/id/<{$vo.id}>"><{$vo.code_len}>B</a>
+								</eq>
+								<lt name="$myRoot" value="2">
+									<{$vo.code_len}>B
+								</lt>
+							</eq>-->
+							<if condition="($vo.user_id eq $myId) OR ($myRoot eq 2) "> 
+								<a href="__APP__/Judge/showUserCode/id/<{$vo.id}>"><{$vo.code_len}>B</a>
+							<else /> <{$vo.code_len}>B
+							</if>
+
+						</td>
+						<td><{$vo.language}></td>
+						<td>
+							<a href="__APP__/Index/showUserMessage/id/<{$vo.user_id}>">
+							<{$vo.nickname}>
+							</a>
+						</td>
+					</tr>
+				</volist>	
+			</table>
+				
+		</div>
+		<div ><{$page}></div>
+	</div>
+</block>

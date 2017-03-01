@@ -1,0 +1,67 @@
+.judge{
+	text-align:center;
+	font-family: 'Microsoft Yahei';
+}
+.judge-status{
+	font-size:25px;
+	font-weight��900;
+}
+.search{
+	font-size:20px;
+	font-weight��900;
+	padding:1cm 0cm;
+}
+.Link a{
+	font-size:20px;
+	font-weight��900;
+	padding:1cm 0cm;
+	color:0;
+}
+.container .judge  .list table{
+		margin:auto;
+		width:1080px;
+		border:none;
+		border-spacing: 0;
+	}
+.container .judge  .list table td{
+		height:40px; 
+		text-indent: 5px;
+		text-align:center;
+		border:#CCCCCC 1px solid;
+	}
+.list table tr th{
+	text-align:center;
+}
+.accepted {
+	color: green;
+}
+.wrong-answer{
+	color: red;
+}
+.time-limit-exceeded{
+	color: brown;
+}
+.memeory-limit-exceeded{
+	color: brown;
+}
+.compilation-error{
+	color:blue;
+}
+.runtime-error{
+	color: blue;
+}
+.output-limit-exceeded{
+	color: blue;
+}
+.input-limit-exceeded{
+	color: blue;
+}
+.pending{
+	color: black;
+}
+.compiling{
+	color: orange;
+}
+.runing{
+	color: olive;
+}

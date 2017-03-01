@@ -1,0 +1,26 @@
+<extend name="../Public/base" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/loginIndex.css" />
+</block>
+<block name="main">
+	<div class="login">
+			<div class="lonin-title">
+				<h1>请写入你的注册邮箱</h1>
+			</div>
+			<form action="__APP__/Login/sendEmail" method="post" class="form">
+				<div class="row">
+					<span class="title">邮箱:</span>
+					<div class="content">
+						<input type="email" name='mail required'/>
+					</div>
+				</div>
+				
+				<div class="row action">
+					<div class="button">
+						<input type="submit" class="btn submit" value="提交" />
+					</div>
+				</div>
+			</form>
+		</div>
+</block>

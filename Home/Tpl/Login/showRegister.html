@@ -1,0 +1,114 @@
+<extend name="../Public/base" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/loginIndex.css" />
+</block>
+
+
+<block name="main">
+	
+	<div class="login">
+			<div class="lonin-title">
+				<h1>注册</h1>
+			</div>
+			<form class="form-horizontal">
+				<!--用户名-->
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">
+			    	<span class="required">*</span>
+			    	<span class="glyphicon glyphicon-user"></span>
+			    </label>
+			    <div class="col-sm-10">
+			      <input minlength="1" maxlength="20" required type="text" class="form-control" id="inputEmail3" placeholder="用户名" name="username">
+			    </div>
+			  </div>
+			    <!--昵称-->
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">
+			    	<span class="required">*</span>
+			    	<span class="glyphicon glyphicon-heart"></span>
+			    </label>
+			    <div class="col-sm-10">
+			      <input minlength="1" maxlength="20" required type="text" class="form-control" id="inputEmail3" placeholder="昵称" name="nickname">
+			    </div>
+			  </div>
+			<!-- 密码-->
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">
+			    	<span class="required">*</span>
+			    	<span class="glyphicon glyphicon-lock"></span>
+			    </label>
+			    <div class="col-sm-10">
+			      <input minlength="6" maxlength="40" required type="password" class="form-control" id="inputEmail3" placeholder="密码" name="password">
+			    </div>
+			  </div>
+			  <!-- 重复密码-->
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">
+			    	<span class="required">*</span>
+			    	<span class="glyphicon glyphicon-lock"></span>
+			    </label>
+			    <div class="col-sm-10">
+			      <input minlength="6" maxlength="40" required type="password" class="form-control" id="inputEmail3" placeholder="重复密码" name="repassword">
+			    </div>
+			  </div>
+			  <!--真实姓名-->
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">
+			    	<span class="required">*</span>
+			    	<span class="glyphicon glyphicon glyphicon-user"></span>
+			    </label>
+			    <div class="col-sm-10">
+			      <input minlength="2" maxlength="20" required type="text" class="form-control" id="inputEmail3" placeholder="真实姓名" name="realname">
+			    </div>
+			  </div>
+			  <!--邮箱-->
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">
+			    	<span class="required">*</span>
+			    	<span class="glyphicon glyphicon-envelope"></span>
+			    </label>
+			    <div class="col-sm-10">
+			      <input minlength="8" maxlength="40" required type="email" class="form-control" id="inputEmail3" placeholder="邮箱" name="email">
+			    </div>
+			  </div>
+			  <!--学校-->
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">
+			    	<!--<span class="required">*</span>-->
+			    	<span class="glyphicon glyphicon-certificate"></span>
+			    </label>
+			    <div class="col-sm-10">
+			      <input maxlength="40" type="text" class="form-control" id="inputEmail3" placeholder="学校" name="school">
+			    </div>
+			  </div>
+			  <!--专业-->
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">
+			    	<!--<span class="required">*</span>-->
+			    	<span class="glyphicon glyphicon-book"></span>
+			    </label>
+			    <div class="col-sm-10">
+			      <input maxlength="40" type="text" class="form-control" id="inputEmail3" placeholder="专业" name="major">
+			    </div>
+			  </div>
+			  <!--座右铭-->
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">
+			    	<!--<span class="required">*</span>-->
+			    	<span class="glyphicon glyphicon-menu-hamburger"></span>
+			    </label>
+			    <div class="col-sm-10">
+			      <input maxlength="255" type="text" class="form-control" id="inputEmail3" placeholder="座右铭" name="motto">
+			    </div>
+			  </div>
+			  <!--提交-->
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-default">提交</button>
+			    </div>
+			  </div>
+			</form>
+			
+		</div>
+</block>

@@ -1,0 +1,19 @@
+.bigggger{
+	font-size:50px;
+}
+
+.col-sm-4{
+	font-size:25px;
+}
+.col-sm-4 h1{
+	font-size:40px;
+}
+.col-xs-12{
+	font-size:25px;
+}
+.list td a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}

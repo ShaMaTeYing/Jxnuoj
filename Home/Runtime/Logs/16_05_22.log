@@ -1,0 +1,23 @@
+[ 2016-05-22T16:08:17+08:00 ] 0.0.0.0 /JxnuOJ/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.011177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011634s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.027537s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.003213s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.009485s ]
+INFO: [ view_template ] --END-- [ RunTime:0.009615s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: data C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7e4848229090366086cc7eeb3bfc0798.php 第 37 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.126435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126584s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.007981s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001145s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.007899s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018414s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001022s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001116s ]
+

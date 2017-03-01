@@ -1,0 +1,89 @@
+<extend name="../Public/base" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+</block>
+<block name="main">
+	<div class="content">
+		<div class="search">
+			<form action="__APP__/Admin/showUserMessage" method="post">
+				 <div class="col-lg-6">
+					<div class="input-group">
+					  <input type="text" class="form-control" placeholder="Search for..." name="value">
+					  <span class="input-group-btn">
+						<button class="btn btn-default" type="submit">搜索</button>
+					  </span>
+					</div><!-- /input-group -->
+				  </div><!-- /.col-lg-6 -->
+				</div><!-- /.row -->
+			</form>
+		</div>
+
+		
+		<div class="modify">
+			<table  class="table table-striped table-bordered mystyle">
+				<tr>
+					<th>用户名</th>
+					<th>昵称</th>
+					<th>真实姓名</th>
+					<th>邮箱</th>
+					<th>状态</th>
+					<th>权限</th>
+					<th>学校</th>
+					<th>专业</th>
+					<th>操作</th>
+				</tr>
+				<volist name='userMessage' id='vo'>
+					<tr>
+						<td> 
+							<a href="__APP__/Index/usermes/username/<{$vo.username}>">
+								<{$vo.username}> 
+							</a>
+						</td>
+						<td><{$vo.nickname}></td>
+						<td><{$vo.realname}></td>
+						<td><{$vo.mail}></td>
+						<td>
+							<eq name="vo.status" value="0">禁用</eq>
+							<eq name="vo.status" value="1">正常</eq>
+							<eq name="vo.status" value="2">邮箱未验证</eq>
+						</td>
+						<td>
+							<eq name="vo.root" value="0">普通用户</eq>
+							<eq name="vo.root" value="1">管理员</eq>
+							<eq name="vo.root" value="2">超级管理员</eq>
+						</td>
+						<td><{$vo.school}></td>
+						<td><{$vo.major}></td>
+						<td>
+							<eq name="vo.status" value="0">
+								<a href="__APP__/Admin/operation/type/1/id/<{$vo.id}>/status/1">
+									启用
+								</a>
+								<else/>
+								<a href="__APP__/Admin/operation/type/1/id/<{$vo.id}>/status/0">
+									禁用
+								</a>
+							</eq>
+							
+							<eq name="data.root" value="2">
+								|
+								<eq name="vo.root" value="1">
+									<a href="__APP__/Admin/operation/type/2/id/<{$vo.id}>/status/0">
+										设为普通用户
+									</a>
+									<else/>
+									<a href="__APP__/Admin/operation/type/2/id/<{$vo.id}>/status/1">
+										设为管理员
+									</a>
+								</eq>
+							</eq>
+						</td>
+					</tr>
+				</volist>
+			</table>
+		
+		</div>
+	
+	</div>
+	<div class="page"><{$page}></div>
+</block>

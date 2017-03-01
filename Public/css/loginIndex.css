@@ -1,0 +1,93 @@
+			html,
+			body,
+			div,
+			span,
+			input,
+			a {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				color: #666;
+				font-family: 'Microsoft Yahei';
+			}
+			a {
+				text-decoration: none;
+				color: #fff;
+			}
+			.required {
+				padding: 0 3px;
+				font-size: 18px;
+				color: red;
+			}
+			.login {
+				width: 400px;
+				margin: 100px auto 0;
+			}
+			.login .lonin-title {
+				padding-left: 60px;
+			}
+			.login h1 {
+				text-align: center;
+			}
+			.form {
+				width: 400px;
+				margin: 50px auto 0;
+			}
+
+			.row {
+				position: relative;
+				height: 40px;
+				line-height: 40px;
+				margin-bottom: 15px;
+				padding-left: 100px;
+			}
+			.row .title {
+				display: inline-block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100px;
+				height: 40px;
+				text-align: right;
+			}
+			.row .content {
+				padding-left: 15px;
+			}
+			.row .content input{
+				width: 300px;
+				height: 36px;
+				text-indent: 10px;
+				outline: none;
+				border: 1px dashed #c33; 
+				border-radius: 5px;
+			}
+			.action {
+				padding-left: 135px;
+			}
+			.row .button {
+				width: 260px;
+				height: 40px;
+				margin: 0 0px;
+			}
+			.row .button .btn {
+				display: inline-block;
+				width: 100px;
+				height: 40px;
+				line-height: 30px;
+				text-align: center;
+				background-color: #5aa05a;
+				cursor: pointer;
+				border-radius: 5px;
+			}
+			.row .button a:hover {
+				color: #fff;
+			}
+			.row .button .submit {
+				margin-left: 50px;
+				outline: none;
+				border: 0;
+				color: #fff;
+				font: 16px/30px 'Microsoft Yahei';
+				background-color: #c33;
+			}

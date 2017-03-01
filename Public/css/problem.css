@@ -1,0 +1,50 @@
+.container .body .upper{
+	text-align:center;
+	margin: 60px auto 0;
+	color: #666;
+}
+.container .body .upper .upper-message{
+	color: #c33;
+	font-size: 16px;
+}
+.container .body .upper-message .mes-row-item {
+	margin: 0 10px;
+}
+.container .body .middle{
+	padding:1cm 1.5cm;
+	/*word-wrap: break-word;
+	white-space:normal;*/
+}
+.container .body .list-group{
+	font-weight: bold;
+	font-size:20px;	
+	font-family: 'Microsoft Yahei';
+}
+.container .body .list-message{
+	border: 1px solid #ccc;
+	background-color:#f5f5f5;
+	padding: 10px;
+	text-align: left;
+	font-size: 18px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	
+
+	
+}
+.container .body .list-message pre {
+	border: 0;
+}
+.container .body .submit{
+	padding:1cm 0cm;
+	text-align:center;
+	font-size:18px;	
+	font-family: 'Microsoft Yahei';
+}
+.container .body .submit a{
+	color:rgb(0,0,255);
+}
+pre{
+	font-family : "微软雅黑";
+	font-size:18px;
+}

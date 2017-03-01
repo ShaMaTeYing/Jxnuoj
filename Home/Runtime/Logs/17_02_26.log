@@ -1,0 +1,1237 @@
+[ 2017-02-26T14:52:39+08:00 ] 0.0.0.0 /JxnuOJ/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002309s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.016551s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.006347s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.012247s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.002344s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001578s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001707s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.019184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019332s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001090s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001152s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000748s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000917s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004176s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000914s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2017-02-26T14:52:41+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003414s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003519s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.004384s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004455s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000308s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.009184s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 1   [ RunTime:0.002991s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000604s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.009851s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 28 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001','1002','1003','1004','1005','1006','1007','1008','1009','1010','1011','1012','1013','1014','1015','1016','1017','1018','1019','1020','1021','1022','1023','1024','1025','1026','1027','1028','1029','1030','1031','1032','1033','1034','1035','1036','1037','1038','1039','1040','1041','1042','1043','1044','1045','1046','1047','1048','1049') ) AND ( `user_id` = null ) ORDER BY problem_id  [ RunTime:0.012388s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1002 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1003 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1004 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1005 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1006 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1007 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1008 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1009 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1010 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1011 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1012 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1013 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1014 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1015 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1016 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1017 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1018 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1019 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1020 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1021 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1022 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1023 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1024 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1025 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1026 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1027 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1028 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1029 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1030 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1031 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1032 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1033 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1034 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1035 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1036 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1037 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1038 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1039 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1040 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1041 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1042 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1043 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1044 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1045 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1046 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1047 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1048 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1049 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001007s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001094s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012379s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000523s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000390s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000342s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001996s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000677s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2017-02-26T14:52:43+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblem/id/1000
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000655s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005612s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003831s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.004094s ]
+SQL: SELECT * FROM `problem` WHERE ( `id` = 1000 ) LIMIT 1   [ RunTime:0.001145s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001117s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001265s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010550s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000420s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000408s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000300s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000436s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001771s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000529s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2017-02-26T17:59:31+08:00 ] 0.0.0.0 /JxnuOJ/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.004043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003887s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000275s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001076s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001211s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012298s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000928s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000755s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000411s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000839s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2017-02-26T17:59:33+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001068s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001203s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003866s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004240s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000304s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003610s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 1   [ RunTime:0.000397s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000590s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004635s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 28 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001','1002','1003','1004','1005','1006','1007','1008','1009','1010','1011','1012','1013','1014','1015','1016','1017','1018','1019','1020','1021','1022','1023','1024','1025','1026','1027','1028','1029','1030','1031','1032','1033','1034','1035','1036','1037','1038','1039','1040','1041','1042','1043','1044','1045','1046','1047','1048','1049') ) AND ( `user_id` = null ) ORDER BY problem_id  [ RunTime:0.002127s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1002 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1003 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1004 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1005 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1006 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1007 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1008 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1009 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1010 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1011 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1012 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1013 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1014 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1015 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1016 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1017 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1018 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1019 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1020 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1021 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1022 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1023 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1024 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1025 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1026 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1027 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1028 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1029 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1030 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1031 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1032 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1033 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1034 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1035 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1036 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1037 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1038 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1039 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1040 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1041 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1042 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1043 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1044 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1045 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1046 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1047 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1048 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1049 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000747s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000827s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012474s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000597s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000416s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000375s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002086s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000517s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2017-02-26T17:59:34+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000954s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006320s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004877s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000404s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 7 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004714s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` WHERE ( `language` = null ) AND ( `judge_results` = null ) LIMIT 1   [ RunTime:0.001668s ]
+SQL: SELECT * FROM `user_problem` WHERE ( `language` = null ) AND ( `judge_results` = null ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.003675s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001192s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001347s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017168s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000839s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000972s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000703s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003502s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2017-02-26T18:00:07+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000712s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006353s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004266s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000305s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 7 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` WHERE ( `language` = null ) AND ( `judge_results` = null ) LIMIT 1   [ RunTime:0.002093s ]
+SQL: SELECT * FROM `user_problem` WHERE ( `language` = null ) AND ( `judge_results` = null ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.003608s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000792s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000894s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.017174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017268s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000519s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000427s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000331s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001968s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000631s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-02-26T18:01:51+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000913s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006351s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004334s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000379s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 7 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004777s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` WHERE ( `language` = null ) AND ( `judge_results` = null ) LIMIT 1   [ RunTime:0.001056s ]
+SQL: SELECT * FROM `user_problem` WHERE ( `language` = null ) AND ( `judge_results` = null ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.002124s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000987s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001087s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016037s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000686s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000450s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000415s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002288s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000597s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2017-02-26T18:01:51+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000845s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.004263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004559s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000325s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 7 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003859s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` WHERE ( `language` = null ) AND ( `judge_results` = null ) LIMIT 1   [ RunTime:0.000966s ]
+SQL: SELECT * FROM `user_problem` WHERE ( `language` = null ) AND ( `judge_results` = null ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.001946s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001175s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001362s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016097s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000541s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000513s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000430s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002339s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000789s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2017-02-26T18:02:43+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001642s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001963s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003645s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004548s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = 0 ) AND ( `problem_id` = 1000 ) LIMIT 1   [ RunTime:0.001631s ]
+SQL: SELECT * FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = 0 ) AND ( `problem_id` = 1000 ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.001123s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001139s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001274s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.020275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020397s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000762s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000584s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000528s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002916s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001298s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001420s ]
+
+[ 2017-02-26T18:02:48+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000684s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.004079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004562s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = 0 ) AND ( `problem_id` = 1001 ) LIMIT 1   [ RunTime:0.001119s ]
+SQL: SELECT * FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = 0 ) AND ( `problem_id` = 1001 ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.001255s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000601s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000688s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017169s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000575s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000544s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000507s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002792s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000740s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2017-02-26T18:04:48+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000921s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006262s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004545s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = 0 ) AND ( `problem_id` = 1001 ) LIMIT 1   [ RunTime:0.001193s ]
+SQL: SELECT * FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = 0 ) AND ( `problem_id` = 1001 ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.001048s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001051s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001174s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017510s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000838s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000591s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000630s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003407s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001275s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001412s ]
+
+[ 2017-02-26T18:04:50+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showAllUserRank
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001105s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003704s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003807s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: sort_param C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 99 行.
+SQL: DELETE FROM `user` WHERE ( `register_time` < 1488103430 ) AND ( `status` = 2 ) [ RunTime:0.004437s ]
+SQL: SELECT * FROM `user` WHERE (  ( `nickname` LIKE '%%' ) OR ( `solve_problem` LIKE '%%' ) ) AND ( `status` = 1 ) ORDER BY solve_problem desc  [ RunTime:0.000784s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000769s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: page C:\wamp\www\JxnuOJ\Home\Runtime\Cache\9b2f19f16e3c98462c29a4fca251988a.php 第 100 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012993s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000784s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000786s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000684s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000993s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003638s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000877s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2017-02-26T18:04:51+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001033s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006306s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004216s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 7 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = null ) LIMIT 1   [ RunTime:0.002678s ]
+SQL: SELECT * FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = null ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.003398s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000679s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000820s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016910s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000687s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000794s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000583s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003281s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000720s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2017-02-26T18:04:57+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000681s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003636s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004737s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004224s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = 0 ) AND ( `problem_id` = 1001 ) LIMIT 1   [ RunTime:0.001047s ]
+SQL: SELECT * FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = 0 ) AND ( `problem_id` = 1001 ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.001492s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000727s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018035s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001427s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000893s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000607s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004136s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000959s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001087s ]
+
+[ 2017-02-26T18:05:12+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001454s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001599s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005731s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004157s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003873s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = 0 ) AND ( `problem_id` = 1001 ) LIMIT 1   [ RunTime:0.001291s ]
+SQL: SELECT * FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = 0 ) AND ( `problem_id` = 1001 ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.001807s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001067s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001158s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.016761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016835s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000780s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000618s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000383s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002550s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000604s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2017-02-26T18:05:14+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001072s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005607s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005168s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000297s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003939s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000816s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.005319s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 28 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001','1002','1003','1004','1005','1006','1007','1008','1009','1010','1011','1012','1013','1014','1015','1016','1017','1018','1019','1020','1021','1022','1023','1024','1025','1026','1027','1028','1029','1030','1031','1032','1033','1034','1035','1036','1037','1038','1039','1040','1041','1042','1043','1044','1045','1046','1047','1048','1049') ) AND ( `user_id` = null ) ORDER BY problem_id  [ RunTime:0.001944s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1002 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1003 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1004 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1005 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1006 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1007 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1008 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1009 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1010 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1011 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1012 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1013 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1014 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1015 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1016 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1017 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1018 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1019 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1020 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1021 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1022 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1023 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1024 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1025 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1026 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1027 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1028 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1029 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1030 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1031 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1032 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1033 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1034 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1035 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1036 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1037 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1038 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1039 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1040 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1041 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1042 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1043 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1044 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1045 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1046 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1047 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1048 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1049 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000779s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000866s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.015605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015706s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000775s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000455s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000276s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002169s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000541s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2017-02-26T18:05:15+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000938s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004120s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 7 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.005788s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = null ) LIMIT 1   [ RunTime:0.001169s ]
+SQL: SELECT * FROM `user_problem` WHERE ( `language` = 'C++' ) AND ( `judge_results` = null ) ORDER BY id desc LIMIT 0,15   [ RunTime:0.004371s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000877s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000971s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016347s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000535s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000602s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000357s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002304s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000630s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2017-02-26T18:07:28+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showAllUserRank
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001689s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001864s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005586s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004806s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000301s ]
+NOTIC: [8] Undefined index: sort_param C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 99 行.
+SQL: DELETE FROM `user` WHERE ( `register_time` < 1488103588 ) AND ( `status` = 2 ) [ RunTime:0.000680s ]
+SQL: SELECT * FROM `user` WHERE (  ( `nickname` LIKE '%%' ) OR ( `solve_problem` LIKE '%%' ) ) AND ( `status` = 1 ) ORDER BY solve_problem desc  [ RunTime:0.000785s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001222s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001356s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: page C:\wamp\www\JxnuOJ\Home\Runtime\Cache\9b2f19f16e3c98462c29a4fca251988a.php 第 100 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012403s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000518s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000564s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000454s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002319s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000824s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2017-02-26T18:07:29+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000987s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006443s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004142s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000389s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 7 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.005089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` LIMIT 1   [ RunTime:0.000802s ]
+SQL: SELECT * FROM `user_problem` ORDER BY id desc LIMIT 0,15   [ RunTime:0.000310s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000719s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000802s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.022353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022458s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001508s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001124s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000841s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004800s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000709s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2017-02-26T18:07:42+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showAllUserRank
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000670s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000772s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005873s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004893s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000409s ]
+NOTIC: [8] Undefined index: sort_param C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 99 行.
+SQL: DELETE FROM `user` WHERE ( `register_time` < 1488103602 ) AND ( `status` = 2 ) [ RunTime:0.000632s ]
+SQL: SELECT * FROM `user` WHERE (  ( `nickname` LIKE '%%' ) OR ( `solve_problem` LIKE '%%' ) ) AND ( `status` = 1 ) ORDER BY solve_problem desc  [ RunTime:0.000621s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001113s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001235s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: page C:\wamp\www\JxnuOJ\Home\Runtime\Cache\9b2f19f16e3c98462c29a4fca251988a.php 第 100 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.018730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018875s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000763s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000600s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000427s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002710s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001075s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001223s ]
+
+[ 2017-02-26T18:07:43+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000643s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005945s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004153s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000328s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 7 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003812s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` LIMIT 1   [ RunTime:0.000942s ]
+SQL: SELECT * FROM `user_problem` ORDER BY id desc LIMIT 0,15   [ RunTime:0.000380s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000548s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000628s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.017346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017424s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000681s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000902s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000688s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003516s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000743s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2017-02-26T18:09:16+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000779s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.004071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003859s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000277s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001168s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001264s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012014s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000804s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000858s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000619s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003610s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000976s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2017-02-26T18:09:17+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000967s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.007527s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004311s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000430s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.004225s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 1   [ RunTime:0.000527s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000936s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004203s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 28 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001','1002','1003','1004','1005','1006','1007','1008','1009','1010','1011','1012','1013','1014','1015','1016','1017','1018','1019','1020','1021','1022','1023','1024','1025','1026','1027','1028','1029','1030','1031','1032','1033','1034','1035','1036','1037','1038','1039','1040','1041','1042','1043','1044','1045','1046','1047','1048','1049') ) AND ( `user_id` = null ) ORDER BY problem_id  [ RunTime:0.001564s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 34 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1002 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1003 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1004 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1005 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1006 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1007 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1008 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1009 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1010 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1011 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1012 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1013 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1014 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1015 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1016 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1017 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1018 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1019 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1020 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1021 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1022 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1023 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1024 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1025 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1026 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1027 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1028 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1029 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1030 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1031 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1032 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1033 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1034 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1035 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1036 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1037 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1038 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1039 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1040 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1041 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1042 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1043 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1044 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1045 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1046 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1047 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1048 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+NOTIC: [8] Undefined offset: 1049 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 41 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000825s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000923s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013027s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000609s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000612s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000444s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002502s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000693s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2017-02-26T18:09:17+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000864s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006713s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004512s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 7 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 8 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 9 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 10 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` LIMIT 1   [ RunTime:0.000921s ]
+SQL: SELECT * FROM `user_problem` ORDER BY id desc LIMIT 0,15   [ RunTime:0.000387s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000630s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000716s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 128 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 129 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.015962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016033s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000618s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000562s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000450s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000656s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000741s ]
+

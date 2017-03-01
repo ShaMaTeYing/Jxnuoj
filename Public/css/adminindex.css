@@ -1,0 +1,14 @@
+.content{
+	text-align:center;
+}
+.content .search{
+	margin : 20px 0px 0px 0px;
+}
+.content .search .modify .tableStyle{
+	margin:auto;
+}
+.content .search .modify .tableStyle table{
+	text-align:center;
+	margin:auto;
+	
+}

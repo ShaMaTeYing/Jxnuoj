@@ -1,0 +1,61 @@
+<extend name="../Public/base" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/problem.css" />
+</block>
+<block name="main">
+<div class="body">
+	<div class="upper">
+		<h1> <{$problemData.title}> </h1>
+		<div class="upper-message">
+			<div class="mes-row">
+				<span class="mes-row-item">Time Limit: <{$problemData.time_limit}> MS</span>
+				<span class="mes-row-item">Memory Limit: <{$problemData.memory_limit}> K </span>
+			</div>
+			<div class="mes-row">
+				<span class="mes-row-item">Total Submission(s): <{$problemData.submissions}></span>
+				<span class="mes-row-item">Accepted Submission(s): <{$problemData.accepted}></span>
+			</div>
+		</div>
+	</div>
+	<div class="middle">
+		<div class="list">
+			<div class="list-group">问题描述</div>
+			<div class="list-message"><pre><{$problemData.description}></pre></div>
+		</div>
+		<div class="list">
+			<div class="list-group">输入格式</div>
+			<div class="list-message"><pre><{$problemData.input}></pre></div>
+		</div>
+		<div class="list">
+			<div class="list-group">输出格式</div>
+			<div class="list-message"><pre><{$problemData.output}></pre></div>
+		</div>
+		<div class="list">
+			<div class="list-group">样例输入 </div>
+			<div class="list-message">
+				<pre><{$problemData.sample_input}></pre>
+			</div>
+		</div>
+		<div class="list">
+			<div class="list-group">样例输出 </div>
+			<div class="list-message">
+				<pre><{$problemData.sample_output}></pre>
+			</div>
+		</div>
+		<div class="list">
+			<div class="list-group">作者 </div>
+			<div class="list-message"> <{$problemData.author}></div>
+		</div>
+		<div class="list">
+			<div class="list-group">来源 </div>
+			<div class="list-message"> <{$problemData.source}></div>
+		</div>
+		
+		<div class="submit">
+		<a href="__APP__/Exam/showSubmit/id/<{$problemData.contest_problem_id}>">提交代码</a>
+		</div>
+	</div>
+</div>
+
+</block>

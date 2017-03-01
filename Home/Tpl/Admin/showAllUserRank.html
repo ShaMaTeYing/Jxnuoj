@@ -1,0 +1,46 @@
+<extend name="../Public/base" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+</block>
+<block name="main">
+	<div class="content">
+		<div class="search">
+			<form action="__APP__/Admin/showAllUserRank" method="post">
+				 <div class="col-lg-6">
+					<div class="input-group">
+					  <input type="text" class="form-control" placeholder="Search for..." name="sort_param">
+					  <span class="input-group-btn">
+						<button class="btn btn-default" type="submit">搜索</button>
+					  </span>
+					  <br>
+					</div><!-- /input-group -->
+				  </div><!-- /.col-lg-6 -->
+				</div><!-- /.row -->
+			</form>
+		</div>
+
+		<div class="modify">
+			<table  class="table table-striped table-bordered mystyle">
+				<tr>
+					<th>昵称</th>
+					<th>解决问题总数</th>
+					<th>总提交数</th>
+					<th>AC率</th>
+					<th>排名</th>
+				</tr>
+				<volist name='problemData' id='vo'>
+					<tr>
+						<td> <a href="__APP__/Index/showUserMessage/id/<{$vo.id}>"><{$vo.nickname}> </a></td>
+						<td> <{$vo.solve_problem}>  </td>
+						<td> <{$vo.submissions}>  </td>
+						<td><{:getRatio($vo['solve_problem'],$vo['submissions'])}>% (<{$vo.solve_problem}>/<{$vo.submissions}>) </td>
+						<td> <{$vo.rank}> </td>
+					</tr>
+				</volist>
+			</table>
+		
+		</div>
+	
+	</div>
+	<div class="page"><{$page}></div>
+</block>

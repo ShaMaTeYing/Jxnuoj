@@ -1,0 +1,163 @@
+﻿@charset "utf-8";
+/*base css*/
+	html,
+	body,
+	div,
+	a,
+	span,
+	form,input,
+	td {
+		margin: 0;
+		padding: 0;	
+	}	
+	html,body {
+		width: 100%;
+		height: 100%;	
+		font-family: 'Microsoft Yahei';
+	}
+	.clearfix {
+		display: block;
+		hiehgt: 0;
+		font-size: 0;
+		content: '';
+		clear: both;
+	}
+	.tCenter {
+		text-align: center;
+	}
+	/*css*/
+	.container {
+		width: 1248px;
+		margin: auto;
+	}
+	.container .header .logo {
+		width: 1248px;
+		height: 195px;
+		background: url(../images/logo.png) no-repeat;
+		background-size: cover;	
+	}
+	.container .header .user-control{
+		float:left;
+	}
+	.container .header .user-control .submit{
+		padding:0.1cm 0.1cm;
+		margin : 15px 20px 15px 5px
+	}
+	.container .header .nav {
+		width: 100%;	
+		height: 200px;
+		margin-top: 50px;
+	}
+	.container .header .nav .list {
+		float: left;
+		width: 300px;
+		height: 200px;
+		margin-left: 87px;
+		background: #c33; 	
+	}
+	.container .header .nav .problem,
+	.container .header .nav .judge-status {
+		line-height: 200px;
+		text-align: center;
+		color: #fff;
+		font-size: 36px;
+		letter-spacing: 5px;
+	}
+	.container .header .nav .problem a ,
+	.container .header .nav .judge-status a{
+		display: inline-block;
+		width: 300px;
+		height: 200px;
+		color: #fff;
+		text-decoration: none;
+	}
+	.container .header .tx-big {
+		font-size: 64px;
+	}
+	.container .header .nav .judge-status {
+		background-color: #69F;
+	}
+	.container .header .nav .author {
+		background-color: #3C0;
+	}
+	.container .header .nav .author .login {
+		font-size: 16px;
+		color: #fff;
+	}
+	.container .header .login .login-group {
+		position: relative;
+		width: 180px;
+		height: 30px;
+		margin-left: 10px;
+		margin-top: 25px;
+		padding-left: 95px;
+		line-height: 34px;
+	}
+	.container .header .login .login-group-title {
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		width: 55px;
+		padding-right: 40px;
+		text-align: right;
+		font-weight: 700;
+	}
+	.container .header .login-group input {
+		width: 180px;
+		height: 30px;
+		text-indent: 10px;
+	}
+	.container .header .login .submit {
+		width: 280px;
+		height: 40px;
+		margin-top: 30px;
+		margin-left: 10px;
+		border: 0;
+		border-radius: 8px;
+		font-size: 18px;
+		font-weight: 700;
+		color: #fff;
+		cursor: pointer;
+		background: #69F;
+	}
+	.container .header .nav .author .info {
+		font-size: 16px;
+	}
+	.container .body  .tableStyle{
+		margin:auto;
+		width:1080px;
+		border:none;
+		border-spacing: 0;
+	}
+	.container .body  .tableStyle td{
+		height:40px; 
+		text-indent: 5px;
+		border:#CCCCCC 1px solid;
+	}
+	.container .body  .tableStyle td a{
+		display: block;
+		height: 30px; 
+		line-height: 30px; 
+		color: blue;
+		text-decoration: none;
+	}
+	.container .body  .tableStyle td a:hover {
+		text-decoration: underline;
+		color: #fff;
+		background-color: #69F;
+	}
+	.page{
+		text-align:center;
+	}
+	.glyphicon.success {
+		color: blue;
+	}
+	.glyphicon.error {
+		color: #c33;
+	}
+	.mystyle tr th{
+	text-align:center;
+}
+.mystyle tr td{
+	text-align:center;
+}

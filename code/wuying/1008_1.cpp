@@ -1,0 +1,11 @@
+$resultStatus[0]='Accepted';
+		$resultStatus[1]='Wrong Answer';
+		$resultStatus[2]='Time Limit Exceeded';
+		$resultStatus[3]='Memory Limit Exceeded';
+		$resultStatus[4]='Runtime Error'
+		$resultStatus[5]='Compilation Error'
+		$resultStatus[6]='Output Limit Exceeded';
+		$resultStatus[7]='Input Limit Exceeded'
+		$resultStatus[8]='pending'
+		$resultStatus[9]='Compiling'
+		$resultStatus[10]='runing'

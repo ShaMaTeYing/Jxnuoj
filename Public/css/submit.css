@@ -1,0 +1,44 @@
+.upper{
+	text-align:center;
+	font-weight: bold;
+	font-size:25px;	
+	color:rgb(0,0,255);
+	padding:1cm 0cm;
+	font-family: 'Microsoft Yahei';
+}
+
+.middle{
+	font-weight£º700;
+	font-size:18px;
+	text-align:center;
+	font-family: 'Microsoft Yahei';
+}
+.middle-left , 
+.middle-right{
+	padding:0cm 1cm;
+	display:inline;
+}
+.middle-left input {
+	height: 25px;
+}
+.down{
+	font-size:20px;
+	font-weight£º900;
+	padding:1cm 0cm;
+	text-align:center;
+}
+.my-btn{
+	font-size:18px;
+	font-weight: 700;
+	text-align:center;
+}
+.my-btn input {
+	width: 80px;
+	height: 25px;
+	margin: 20px 10px 0;
+	cursor: pointer;	
+}
+.text{
+	font-size:16;
+	text-align:center;
+}

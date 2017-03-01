@@ -1,0 +1,31 @@
+﻿	<div class="footer">
+		<hr>
+		<div class="row footer-bottom">
+          <ul class="list-inline text-center">
+            <li>童程教育OI在线评测系统</li>
+            <li><a href="http://www.miitbeian.gov.cn" target="view_window" style="color: #337ab7;">赣ICP备16003914号</a></li>
+			<li>Copyright &copy; 2016-  author:童程教育</li>
+          </ul>
+        </div>
+	</div>
+	<script>
+		/*导航*/
+		(function(){
+			if(window.sessionStorage){
+
+				var nav = $('.navbar-nav');
+				nav.find('li')
+					.on('click',function(){
+						sessionStorage.activeIndex = $(this).index();
+						$(this).addClass('active')
+							.siblings()
+							.removeClass('active');
+					})
+					.eq(sessionStorage.activeIndex)
+					.addClass('active')
+					.siblings()
+					.removeClass('active');
+			}
+		})();
+	</script>
+</div>

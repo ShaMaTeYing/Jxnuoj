@@ -1,0 +1,91 @@
+<extend name="../Public/base" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/judge.css" />
+</block>
+<block name="main">
+	<div class="judge">
+		<div class="judge-status">实时评测状态</div>
+		<div class="search">
+			<form action="__APP__/Exam/showStatus" method="post"> 
+				问题ID<input type="text" name="contest_problem_id" />
+				昵称<input type="text" name="username" />
+				语言：
+				<select name="language">
+					<option value="C++">C++</option>
+					<option value="C">C</option>
+					<option value="Java">Java</option>
+					<option value="PHP">PHP</option>
+				</select>
+				状态:
+				<select name="status">
+					<option value="0">Accepted</option>
+					<option value="1">Wrong Answer</option>
+					<option value="2">Compile Error</option>
+					<option value="3">Time Limit Exceeded</option>
+				</select>
+				<input class="submit" type="submit" value="搜索"> 
+			</form>
+		</div>
+		<div class="list">
+			<table class="table table-bordered mystyle">
+				<tr>
+					<th>运行ID</th>
+					<th>提交时间</th>
+					<th>评测结果</th>
+					<th>问题ID</th>
+					<th>运行时间</th>
+					<th>代码长度</th>
+					<th>语言</th>
+					<th>昵称</th>
+				</tr>
+				<volist name='list' id='vo'>
+					<tr>
+						<td><{$vo.id}></td>
+						<td><{$vo.submit_time|date="Y-m-d H:i",###}></td>
+						<td>
+
+							
+							<eq name="vo.judge_status" value="0">
+								<span class="accepted">Accepted</span>
+							</eq>
+							<eq name="vo.judge_status" value="1">
+								<span class="wrong-answer">Compile Error</span>
+							</eq>
+							<eq name="vo.judge_status" value="2">
+								<span class="compilation-error">Wrong Answer</span>
+							</eq>
+							<eq name="vo.judge_status" value="3">
+								<span class="time-limit-exceeded">Time Limit Exceeded</span>
+							</eq>
+						
+						</td>
+						
+						<td>
+							<a href="__APP__/Exam/showProblem/id/<{$vo.contest_problem_id}>">
+							<{$vo.contest_problem_id}>
+							</a>
+						</td>
+						
+						<td><{$vo.exe_time}> MS</td>
+						<td>
+							<eq name="vo.contest_user_id" value="$myId">
+								<a href="__APP__/Exam/showCode/id/<{$vo.id}>"><{$vo.code_len}>B</a>
+							<else/>
+								<{$vo.code_len}>B
+							</eq>
+						</td>
+						<td><{$vo.language}></td>
+						<td>
+							<a href="__APP__/Index/usermes/username/<{$vo.username}>">
+							<{$vo.username}>
+							</a>
+						</td>
+					</tr>
+				</volist>	
+			</table>
+				
+		</div>
+		<div ><{$page}></div>
+	</div>
+</block>

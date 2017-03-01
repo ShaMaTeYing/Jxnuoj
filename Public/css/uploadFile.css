@@ -1,0 +1,18 @@
+.problem-message{
+	width:400px;
+	margin: 100px auto;
+}
+.container .problem-message .problem-msg{
+	text-align:left;
+}
+.upload-file{
+	width:300px;
+	margin: 60px auto 60px;
+	text-align:left;
+}
+.problem-id{
+	margin:30px 30px;
+}
+.form-group{
+	margin: 0px auto 30px;
+}

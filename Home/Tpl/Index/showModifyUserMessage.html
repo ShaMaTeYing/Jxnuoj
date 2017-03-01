@@ -1,0 +1,45 @@
+<extend name="../Public/base" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/loginIndex.css" />
+</block>
+<block name="main">
+	<div class="login">
+			<div class="lonin-title">
+				<h1>修改信息</h1>
+			</div>
+			<form action="__APP__/Index/modifyUserMessage" method="post" class="form">
+				<div class="row password">
+					<span class="title">旧密码:</span>
+					<div class="content">
+						<input type="password" name="lastpassword"/ >
+					</div>
+				</div>
+				<div class="row password">
+					<span class="title">新密码:</span>
+					<div class="content">
+						<input type="password" name="newpassword" />
+					</div>
+				</div>
+				<div class="row password">
+					<span class="title">学校:</span>
+					<div class="content">
+						<input type="text" name="school" value="<{$data.school}>"/>
+					</div>
+				</div>
+				<div class="row password">
+					<span class="title">座右铭:</span>
+					<div class="content">
+						<input type="text" name="motto" value="<{$data.motto}>"/>
+					</div>
+				</div>
+
+				<div class="row action">
+					<div class="button">
+						<a href="__APP__/Index/index" class="btn reg">取消</a>
+						<input type="submit" class="btn submit" value="提交" />
+					</div>
+				</div>
+			</form>
+		</div>
+</block>

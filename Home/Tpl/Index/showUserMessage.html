@@ -1,0 +1,42 @@
+<extend name="../Public/base" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/usermes.css" />
+</block>
+<block name="main">
+	<div class="row" id="profile-heading">
+			<div class="row text-center">
+				<div class="col-sm-4 hidden-xs">
+					<span class="text-muted">排名</span>
+					<span class="bigggger"><{$myRank}></span>
+				</div>
+				<div class="col-sm-4">
+					<h1 id="username"><{$user.username}><a href="#" id="add-friend" class="link-icon" title="Add Friend" style="display: none;"><span class="fa fa-star" style="color: #ccc;"></span></a><a href="#" id="remove-friend" class="link-icon" title="Remove Friend" style=""><span class="fa fa-star" style="color: glod;"></span></a></h1>
+					<div class="hidden-xs" id="profile-school">
+						<a href="#"><{$user.school}></a>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<span class="text-muted">解决题目</span>
+					<span class="bigggger"><{$user.solve_problem}></span>
+				</div>
+			</div>
+					<blockquote class="col-xs-12">
+				<p><{$user.motto}></p>
+			</blockquote>
+	</div>
+	<div class="list">
+		<h4 class="">已经完成的题目列表</h4>
+		<table class="table table-bordered  mystyle">
+			<volist name="problemData" id="vo" mod="10" >
+				<eq name="mod" value="0"><tr></eq>
+				<td>
+					<a href="__APP__/Index/showProblem/id/<{$vo.problem_id}>">
+						<{$vo.problem_id}>
+					</a>
+				</td>
+				<eq name="mod" value="9"></tr></eq>
+			</volist>
+		</table>
+	</div>
+</block>

@@ -1,0 +1,35 @@
+﻿<extend name="../Public/base" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/submit.css" />
+</block>
+<block name="main">
+	<form action="__APP__/Judge/onlineJudge/problemID/<{$problemData.id}>" method="post">
+		<div class="upper">
+			提交你的问题
+		</div>
+		<div class="middle">
+			<div class="middle-left">
+			问题ID: <input type="text" name="problemID" size="10" value= <{:viewAdd($problemData['id'],'0')}> />
+			</div>
+			
+			<div class="middle-right">
+				语言：
+				<select name="language">
+					<option value="C++">C++</option>
+					<option value="C">C</option>
+					<option value="PHP">PHP</option>
+					<option value="Java">Java</option>
+				</select>
+			</div>
+			
+		</div>
+		<div class="down"> 源代码</div>
+		<div class="text"> <textarea rows="30" cols="120" name="code" required></textarea></div>
+		<div class="my-btn">
+				<input class="submit" type="submit" value="提交">   
+				<input class="reset" type="reset" value="重置">
+		</div>
+		
+	</form>
+</block>

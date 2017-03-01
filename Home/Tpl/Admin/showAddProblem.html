@@ -1,0 +1,60 @@
+<extend name="../Public/base" />
+<block name="css">
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/creatproblem.css" />
+</block>
+<block name="main">
+	<form action='<{:U("Admin/creatProblemData")}>' method='post' enctype="multipart/form-data">
+		<div class="content">
+			<div class="creat">添加问题</div>
+			<div class="text"> 
+				问题ID<input type="text" name="id"/>
+			</div>
+			<div class="Limit"> 
+				时间限制<input type="text" name="time_limit" value="1000"/>ms
+				内存限制<input type="text" name="memory_limit" value="32768"/>K
+				输出限制<input type="text" name="output_limit" value="256"/>K
+			</div>
+			<div class="text">
+				作者<input type="text" name="author"/>
+			</div>
+			<div class="text"> 
+				来源<input type="text" name="source"/>
+			</div>
+			<div class="text">
+				标题<input type="text" name="title"/>
+			</div>
+			<div class="textarea"> 
+				问题描述
+				<textarea name="description">
+				</textarea>
+			</div>
+			<div class="textarea"> 
+				输入格式
+				<textarea name="input">
+				</textarea>
+			</div>
+			<div class="textarea"> 
+				输出格式
+				<textarea name="output">
+				</textarea>
+			</div>
+			<div class="textarea"> 
+				输入样例
+				<textarea name="sample_input">
+				</textarea>
+			</div>
+			<div class="textarea"> 
+				输出样例
+				<textarea name="sample_output">
+				</textarea>
+			</div>
+
+
+			<div class="btn">
+				<input type="submit" value="提交" />
+				<input type="reset" value="重置" />
+			</div>
+		</div>
+	</form>
+</block>
