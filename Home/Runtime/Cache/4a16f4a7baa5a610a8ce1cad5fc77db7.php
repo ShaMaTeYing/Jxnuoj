@@ -7,8 +7,9 @@
 		<script language="javascript" src="__PUBLIC__/js/jquery-1.12.2.min.js"></script>
 		<script language="javascript" src="__PUBLIC__/js/bootstrap.js"></script>
 		
-			<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
-		
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/showProblemList.css" />
+
 		<title>JxnuOJ</title>
 	</head>	
 	<body>
@@ -32,6 +33,7 @@
 				</li>
 				<li><a href="__APP__/Index/showProblemList">题目</a></li>
 				<li><a href="__APP__/Admin/showAllUserRank">排名</a></li>
+				<li><a href="__APP__/Exam/index">比赛</a></li>
 				<li><a href="__APP__/Judge/showRealTimeEvaluation">实时评测</a></li>
 			  </ul>
 			  
@@ -62,7 +64,6 @@
 	</div>
 		
 		
-		
         <div class="body">
 			<div class="search">
 				<form action="__APP__/Index/showProblemList" method="post">
@@ -78,25 +79,45 @@
 					</div><!-- /.row -->
 				</form>
 			</div>
-        	<table  class="table table-striped table-bordered mystyle">
-			<tr>
-				<th>我的状态</th>
-				<th>问题ID</th>
-				<th>问题标题</th>
-				<th>正确率 (正确/总数)</th>
-			</tr>
-			<?php if(is_array($problemData)): $i = 0; $__LIST__ = $problemData;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-					<td class="tCenter">
-						<?php if(($vo["judge_status"]) == "0"): ?><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span>
-						<?php else: ?>
-							<?php if(($vo["judge_status"]) > "0"): ?><span class="glyphicon glyphicon-remove error" aria-hidden="true"></span><?php endif; endif; ?>
-					</td>
-					<td><?php echo viewAdd($vo['id'],'0');?> </td>
-					<td> <a href='__APP__/Index/showProblem/id/<?php echo ($vo["id"]); ?>'> <?php echo ($vo["title"]); ?> </a> </td>
-					<td><?php echo getRatio($vo['accepted'],$vo['submissions']);?>% (<?php echo ($vo["accepted"]); ?>/<?php echo ($vo["submissions"]); ?>) </td>
-				</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-			
-			</table>
+			<div class="problem">
+	        	<table  class="table table-striped table-bordered mystyle">
+				<tr>
+					<th>我的状态</th>
+					<th>问题ID</th>
+					<th style="text-align:left;">问题标题</th>
+					<th>正确率 (正确/总数)</th>
+				</tr>
+				<?php if(is_array($problemData)): $i = 0; $__LIST__ = $problemData;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+						<td class="tCenter">
+							<?php if(($vo["judge_status"]) == "0"): ?><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span>
+							<?php else: ?>
+								<?php if(($vo["judge_status"]) > "0"): ?><span class="glyphicon glyphicon-remove error" aria-hidden="true"></span><?php endif; endif; ?>
+						</td>
+						<td><?php echo ($vo["id"]); ?> </td>
+						<td style="text-align:left;"> <a href='__APP__/Index/showProblem/id/<?php echo ($vo["id"]); ?>'> <?php echo ($vo["title"]); ?> </a> </td>
+						<td><?php echo getRatio($vo['accepted'],$vo['submissions']);?>% (<?php echo ($vo["accepted"]); ?>/<?php echo ($vo["submissions"]); ?>) </td>
+					</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+				
+				</table>
+			</div>
+			<div class="mylabel">
+				<div class="label-heading">
+					<h3 class="label-title">
+						<span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+						分类
+					</h3>
+				</div>
+				<table class="table table-hover">
+					<?php if(is_array($labelData)): $i = 0; $__LIST__ = $labelData;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+							<td>
+								<a href="__APP__/Index/showProblemList/label_id/<?php echo ($vo["label_id"]); ?>">
+									<?php echo ($vo["label_name"]); ?>
+								</a>
+							</td>
+							<td><?php echo ($vo["problem_number"]); ?></td>
+						</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+				</table>
+			</div>
 			
         </div>
 		<div class="page"><?php echo ($page); ?></div>
