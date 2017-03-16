@@ -22,6 +22,12 @@ class AdminAction extends BaseAction {
 	public function showAddProblem(){
 		$this->display();
 	}
+	//删除空格
+	public function trimall($str){
+	    $qian=array(" ","　","\t","\n","\r");
+	    $hou=array("","","","","");
+	    return str_replace($qian,$hou,$str); 
+	}
 	/*添加题目*/
 	public function creatProblemData(){
 		
@@ -29,11 +35,30 @@ class AdminAction extends BaseAction {
 		foreach($_POST as $key=>$value){
 			$_POST[$key]=htmlspecialchars($value);
 		}
-		
+		//dump($_POST);
+		$labelString=$_POST['label'];
+		$labelString=$this->trimall($labelString);
+		$labelData=explode(";", $labelString);
+		for($i=0;$i<count($labelData);$i++){
+			$where['label_name']=$labelData[$i];
+			$cnt=M('label_info')->where($where)->count();
+			if($cnt==0){
+				$data['label_name']=$labelData[$i];
+				$data['status']=0;
+				M('label_info')->data($data)->add();
+			}
+			$labelId=M('label_info')->where($where)->find();
+			$problemId=$User->max('id');
+			$problemLabelData['problem_id']=$problemId+1;
+			$problemLabelData['label_id']=$labelId['id'];
+			M('problem_label')->data($problemLabelData)->add();
+		}
+		unset($_POST[6]);
+		$_POST['id']=$problemId+1;
 		$count=$User->add($_POST);
 		if($count)
-			$this->success('success','index');
-		else $this->error('fail','index');
+			$this->success('success','showProblemLibrary');
+		else $this->error('fail','showProblemLibrary');
 	}
 	
 	/*删除题目*/
@@ -72,7 +97,7 @@ class AdminAction extends BaseAction {
 			//$this->error($upload->getErrorMsg());
 		}else{// 上传成功 获取上传文件信息
 			$info =  $upload->getUploadFileInfo();
-			$this->success('success!','index');
+			$this->success('success!','showProblemLibrary');
 		}
 	}
 	/*显示修改题目界面*/
@@ -87,6 +112,7 @@ class AdminAction extends BaseAction {
 		foreach($_POST as $key=>$value){
 			$_POST[$key]=htmlspecialchars($value);
 		}
+		
 		$count=M('problem')->where('id='.$_POST['id'])->save($_POST);
 		if($count>0){
 			$this->success('success!','showProblemLibrary');

@@ -8,29 +8,23 @@ def debug(msg):
 
 # check if two files are the same
 def file_same(a,b):
-    fileA = open(a,'r')
-    fileB = open(b,'r')
-    value = False
-    fa=fileA.read()
-    fb=fileB.read()
 
-    fa=fa.replace('\r','')
-    fb=fb.replace('\r','')
-    fa=fa.rstrip('\n')
-    fb = fb.rstrip('\n')
-
-
-
-
-    if fa == fb:
+	fileA = open(a,'r')
+	fileB = open(b,'r')
+	value = False
+	fa=fileA.read()
+	fb=fileB.read()
+	fa=fa.replace('\r','')
+	fb=fb.replace('\r','')
+	if fa == fb:
 		value=True
 	# if fileA.readlines() == fileB.readlines():
 	# 	value = True
-    fileA.close()
-    fileB.close()
+	fileA.close()
+	fileB.close()
 
 
-    return value
+	return value
 def old_file_same(a, b):
 	fileA = open(a, "r")
 	fileB = open(b, "r")
@@ -231,7 +225,7 @@ def Judge(contest_id,sourcefile,problem,TIME_LIMIT,MEMORY_LIMIT):
     a = open(sourcefile,"r")
     codecode = a.read()
     a.close()
-    if len(codecode) >= 500000:
+    if len(codecode) >= 50000:
         debug("ILE")
         # sys.exit(verdict["ILE"])
         answer['judge_status']=7
@@ -313,8 +307,7 @@ def Judge(contest_id,sourcefile,problem,TIME_LIMIT,MEMORY_LIMIT):
     debug(outputExpected)
     a = open(outfile,'r')
     codecode = a.read()
-    debug(codecode)
-    if len(codecode) >= 5000000:
+    if len(codecode) >= 50000:
         debug( "OLE")
         answer['judge_status'] = 6
         return answer
@@ -346,7 +339,7 @@ def Judge(contest_id,sourcefile,problem,TIME_LIMIT,MEMORY_LIMIT):
 
         if compare_files(outputProduced,outputExpected) == True:
             debug("PE")
-            answer['judge_status'] = 11
+            answer['judge_status'] = 4
             return answer
         else:
             debug("WA")
@@ -405,4 +398,3 @@ if __name__=="__main__":
     while True:
         Query()
         time.sleep(0.5)
-    # Query()

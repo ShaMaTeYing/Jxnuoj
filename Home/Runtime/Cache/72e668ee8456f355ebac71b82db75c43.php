@@ -33,6 +33,7 @@
 				</li>
 				<li><a href="__APP__/Index/showProblemList">题目</a></li>
 				<li><a href="__APP__/Admin/showAllUserRank">排名</a></li>
+				<li><a href="__APP__/Exam/index">比赛</a></li>
 				<li><a href="__APP__/Judge/showRealTimeEvaluation">实时评测</a></li>
 			  </ul>
 			  
@@ -64,14 +65,14 @@
 		
 		
 	
-	<div class="login">
+	<div class="login" >
 			<div class="lonin-title">
 				<h1>注册</h1>
 			</div>
-			<form class="form-horizontal">
+			<form class="form-horizontal" action="__APP__/Login/register" method="post">
 				<!--用户名-->
 			  <div class="form-group">
-			    <label for="inputEmail3" class="col-sm-2 control-label">
+			    <label for="inputEmail3" class="col-sm-2 control-label" >
 			    	<span class="required">*</span>
 			    	<span class="glyphicon glyphicon-user"></span>
 			    </label>
@@ -126,7 +127,7 @@
 			    	<span class="glyphicon glyphicon-envelope"></span>
 			    </label>
 			    <div class="col-sm-10">
-			      <input minlength="8" maxlength="40" required type="email" class="form-control" id="inputEmail3" placeholder="邮箱" name="email">
+			      <input minlength="8" maxlength="40" required type="email" class="form-control" id="inputEmail3" placeholder="邮箱" name="mail">
 			    </div>
 			  </div>
 			  <!--学校-->

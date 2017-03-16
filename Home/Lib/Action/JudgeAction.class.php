@@ -50,7 +50,7 @@ class JudgeAction extends BaseAction {
 		$number=intval($problemData['time_limit'],10);
 //		$timeLimit=$number/1000;
 		$timeLimit=$number;
-		$memoryLimit=131072;
+		$memoryLimit=32768;
 		$userinfo = session('userinfo');
 		$code='code';
 		if(!file_exists($code)) {

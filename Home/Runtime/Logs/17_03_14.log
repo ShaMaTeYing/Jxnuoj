@@ -1,0 +1,88 @@
+[ 2017-03-14T11:05:38+08:00 ] 0.0.0.0 /JxnuOJ/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002131s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006680s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008097s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000440s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001122s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001361s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016372s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000819s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000942s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000791s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003966s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001073s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001240s ]
+
+[ 2017-03-14T11:05:41+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000786s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.004035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004482s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000420s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.008409s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` LIMIT 1   [ RunTime:0.000384s ]
+SQL: SELECT * FROM `user_problem` ORDER BY id desc LIMIT 0,15   [ RunTime:0.000398s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000928s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001026s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 145 行.
+NOTIC: [8] Undefined variable:  C:\wamp\www\JxnuOJ\Home\Runtime\Cache\7511010e270e698fc55b6c49fbf2a4e7.php 第 146 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.018171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018267s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000637s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000431s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000303s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002190s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000583s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000662s ]
+

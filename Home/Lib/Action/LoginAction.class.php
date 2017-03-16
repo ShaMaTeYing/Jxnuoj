@@ -101,6 +101,8 @@ class LoginAction extends BaseAction {
 	}
 	//判断注册信息
 	public function register(){
+		//dump($_POST);
+		//die;
 		if(!session('regUser')){
 			$regUser['ip'] = get_client_ip();
 			$regUser['time'] = time();
@@ -195,7 +197,7 @@ class LoginAction extends BaseAction {
 	public function showModifyPassword(){
 		$authentication = session('authentication');
 		if(time()-$authentication['time']>5*60){
-			$this->error('认证链接失效，请重新发送.',U('Login/showGetMail'));
+			$this->error('认证链接失效，请重新注册.',U('Login/showGetMail'));
 			
 		}
 		if($_GET['key'] == $authentication['key']){
@@ -227,20 +229,22 @@ class LoginAction extends BaseAction {
 	public function regCheckMail(){
 		$authentication = session('authentication');
 		if(time()-$authentication['time']>5*60){
-			
+			//dump(time());
+			//dump($authentication['time']);
+			//die;
 			M('user')->where(array('id'=>session('userRegId')))->delete();
-			$this->error('认证链接失效，请重新注册.',U('Login/register_html'));
+			$this->error('认证链接失效，请重新注册.',U('Login/showRegister'));
 			
 		}
 		if($_GET['key'] == $authentication['key']){
 			$status = M('user')->where(array('id'=>session('userRegId')))->getField('status');
 			if($status == 1)
-				$this->error('链接已被认证.',U('Login/index'));
+				$this->error('链接已被认证.',U('Index/index'));
 			$status = M('user')->where(array('id'=>session('userRegId')))->setField('status',1);
 			if($status)
-				$this->success('邮箱验证已通过，注册成功.',U('Login/index'));
+				$this->success('邮箱验证已通过，注册成功.',U('Index/index'));
 		}else{
-			$this->error('认证链接无效.',U('Login/index'));
+			$this->error('认证链接无效.',U('Login/showRegister'));
 		}
 	}
 
@@ -255,7 +259,7 @@ class LoginAction extends BaseAction {
 		$userMail = $userMail;
 		$mailTitle = '江西师范大学OJ'.$info;
 		$local='http://localhost/JxnuOJ';
-		$online='http://www.jxnugo.com';
+		$online='http://119.29.147.50/JxnuOJ';
 		$mailContent = $userMail.',您好，您正在通过邮箱认证完成'.$info.'，链接5分钟内有效，请点击认证链接：'.$online.'/index.php/Login/'.$method.'/key/'.$authentication['key'];
 		import('ORG.Net.Mail');
 		//发送方的邮箱信息需要在config.php里配置

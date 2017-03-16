@@ -1,0 +1,18 @@
+.search{
+	padding-left: 34px;
+	width: 100%;
+}
+.label-title{
+	color: green;
+}
+.problem{
+	width: 75%;
+	padding-left: 50px;
+	float: left;
+}
+.mylabel{
+	wight:25%;
+	padding-left: 75px;
+	float: left;
+}
+

@@ -1,0 +1,2118 @@
+[ 2017-03-15T10:10:29+08:00 ] 0.0.0.0 /JxnuOJ/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001925s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.007693s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008922s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000378s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001701s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001838s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016214s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001163s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001136s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000602s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000847s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004044s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000994s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001076s ]
+
+[ 2017-03-15T10:10:33+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showLogin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001534s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001694s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.004794s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005116s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000290s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000846s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000949s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009593s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000424s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000478s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000364s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001943s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000707s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2017-03-15T10:10:35+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000602s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003395s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005093s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000316s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000560s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000644s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.007116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007212s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000566s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000369s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000260s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001833s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000479s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2017-03-15T10:10:38+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showProblemLibrary
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000714s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003819s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004502s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.004949s ]
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 11 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 1   [ RunTime:0.003897s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,100   [ RunTime:0.000674s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001267s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001363s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012179s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000727s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000461s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000314s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002818s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000638s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2017-03-15T10:33:05+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.004386s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004570s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002441s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003746s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003609s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000320s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001654s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001797s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014568s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001286s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001325s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001021s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005497s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001309s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001410s ]
+
+[ 2017-03-15T10:33:07+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000817s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000963s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003981s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003586s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000391s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: label_id C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003596s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 1   [ RunTime:0.000441s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000521s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003508s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 58 行.
+NOTIC: [2] implode(): Invalid arguments passed C:\wamp\www\JxnuOJ\ThinkPHP\Lib\Core\Db.class.php 第 461 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN () ) AND ( `user_id` = 1 ) ORDER BY problem_id  [ RunTime:0.001102s ]
+ERR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ) AND ( `user_id` = 1 ) ORDER BY problem_id' at line 1
+ [ SQL语句 ] : SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN () ) AND ( `user_id` = 1 ) ORDER BY problem_id 
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 64 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 71 行.
+SQL: SHOW COLUMNS FROM `label_info` [ RunTime:0.003392s ]
+SQL: SELECT * FROM `label_info`  [ RunTime:0.000256s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 84 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001335s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001441s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: label_id C:\wamp\www\JxnuOJ\Home\Runtime\Cache\4a16f4a7baa5a610a8ce1cad5fc77db7.php 第 113 行.
+NOTIC: [8] Undefined index: label_name C:\wamp\www\JxnuOJ\Home\Runtime\Cache\4a16f4a7baa5a610a8ce1cad5fc77db7.php 第 114 行.
+NOTIC: [8] Undefined index: problem_number C:\wamp\www\JxnuOJ\Home\Runtime\Cache\4a16f4a7baa5a610a8ce1cad5fc77db7.php 第 117 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013993s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000489s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000455s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000303s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000590s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2017-03-15T10:33:10+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showProblemLibrary
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000697s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003449s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003472s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003578s ]
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 11 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 1   [ RunTime:0.000367s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,100   [ RunTime:0.000324s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000994s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001106s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011966s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000501s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000446s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000315s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002019s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000574s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000672s ]
+
+[ 2017-03-15T10:33:12+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showAddProblem
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000701s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005765s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003431s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000410s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000954s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001051s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012194s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000506s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000458s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000311s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002027s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2017-03-15T10:34:01+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/creatProblemData
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001207s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001399s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003784s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003965s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003938s ]
+SQL: SHOW COLUMNS FROM `label_info` [ RunTime:0.004229s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `label_info` WHERE ( `label_name` = '水题' ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: INSERT INTO `label_info` (`label_name`,`status`) VALUES ('水题',0) [ RunTime:0.002157s ]
+SQL: SELECT * FROM `label_info` WHERE ( `label_name` = '水题' ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SELECT MAX(id) AS tp_max FROM `problem` LIMIT 1   [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `problem_label` [ RunTime:0.003801s ]
+SQL: INSERT INTO `problem_label` (`problem_id`,`label_id`) VALUES (1,51) [ RunTime:0.001799s ]
+SQL: INSERT INTO `problem` (`time_limit`,`memory_limit`,`author`,`source`,`title`,`description`,`input`,`output`,`sample_input`,`sample_output`,`id`) VALUES (1000,32768,'wuying','wuying','A+B','给出两个整数A,B。计算A+B。','有多组测试数据。\r\n每组数据包括两个整数A,B。(0&lt;A,B&lt;100)。','对于每组测试数据，输出A+B的结果。每个结果占一行。','1 2\r\n3 4\r\n5 6','3\r\n7\r\n11',1) [ RunTime:0.001685s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000860s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000982s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.007465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007583s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000414s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000418s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000279s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001808s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000501s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2017-03-15T10:34:03+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showProblemLibrary
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002726s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003152s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.010430s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008152s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.007788s ]
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 11 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 1   [ RunTime:0.000685s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,100   [ RunTime:0.000580s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002157s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002388s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.030990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031246s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001241s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001207s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000632s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004580s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001636s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001923s ]
+
+[ 2017-03-15T10:34:05+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showUpload/id/1/title/A+B
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000837s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003257s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003722s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000408s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000926s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001023s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009592s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001003s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000667s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000607s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003415s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000679s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2017-03-15T10:34:20+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showProblemLibrary
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000890s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005232s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003243s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000404s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003022s ]
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 11 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 1   [ RunTime:0.000482s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,100   [ RunTime:0.000353s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001020s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001128s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010273s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000514s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000446s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000330s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002325s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000790s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-03-15T10:35:07+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showUpload/id/1000/title/A+B
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001569s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001713s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005722s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003712s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000379s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001643s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001873s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015008s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000764s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000816s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000696s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000993s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003787s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000745s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000861s ]
+
+[ 2017-03-15T10:35:38+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/upload
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000738s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004013s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000340s ]
+NOTIC: [8] Undefined index: extension C:\wamp\www\JxnuOJ\ThinkPHP\Extend\Library\ORG\Net\UploadFile.class.php 第 503 行.
+NOTIC: [8] Undefined index: extension C:\wamp\www\JxnuOJ\ThinkPHP\Extend\Library\ORG\Net\UploadFile.class.php 第 503 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002187s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012554s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.002434s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.002554s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001919s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008781s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001558s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001645s ]
+
+[ 2017-03-15T10:35:39+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showProblemLibrary
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002517s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002709s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002122s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003412s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004562s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003882s ]
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 11 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 1   [ RunTime:0.000416s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,100   [ RunTime:0.000374s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002581s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002690s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018963s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001500s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001445s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001462s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006202s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001630s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001723s ]
+
+[ 2017-03-15T10:36:10+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showAddProblem
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002193s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003541s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004037s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000407s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002631s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002747s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017093s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001629s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001407s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001262s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006011s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001510s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001593s ]
+
+[ 2017-03-15T10:37:53+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/creatProblemData
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001675s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001794s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006285s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003944s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003521s ]
+SQL: SHOW COLUMNS FROM `label_info` [ RunTime:0.003022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `label_info` WHERE ( `label_name` = '数论' ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: INSERT INTO `label_info` (`label_name`,`status`) VALUES ('数论',0) [ RunTime:0.004093s ]
+SQL: SELECT * FROM `label_info` WHERE ( `label_name` = '数论' ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SELECT MAX(id) AS tp_max FROM `problem` LIMIT 1   [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `problem_label` [ RunTime:0.003433s ]
+SQL: INSERT INTO `problem_label` (`problem_id`,`label_id`) VALUES (1001,52) [ RunTime:0.003143s ]
+SQL: INSERT INTO `problem` (`time_limit`,`memory_limit`,`author`,`source`,`title`,`description`,`input`,`output`,`sample_input`,`sample_output`,`id`) VALUES (1000,32768,'吴迎','吴迎','后a位数','输入两个整数，输出x^y的后a位数。\r\n','第一行是一个整数t表示有t组测试数据。\r\n每组测试数据包含3个正整数x,y,a。(1&lt;=x&lt;=10^10000，1&lt;=y&lt;=10^9,1&lt;=a&lt;=9)。','输出x^y的后a位数,每个结果占一行。','2\r\n2 1 1\r\n1 1000000000 9','2\r\n000000001',1001) [ RunTime:0.002840s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001226s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001334s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008697s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000727s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000693s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000575s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003020s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000912s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-03-15T10:37:54+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showProblemLibrary
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001847s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002051s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.007527s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006574s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.006341s ]
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 11 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 1   [ RunTime:0.000585s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,100   [ RunTime:0.000616s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001929s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002113s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.024077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024245s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001628s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001595s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.001822s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007004s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001509s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001688s ]
+
+[ 2017-03-15T10:37:57+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showUpload/id/1001/title/%E5%90%8Ea%E4%BD%8D%E6%95%B0
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000962s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005599s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003625s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000416s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001237s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001330s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014586s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001300s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001240s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000898s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005060s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001170s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001277s ]
+
+[ 2017-03-15T10:38:08+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/upload
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000883s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005668s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003518s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000426s ]
+NOTIC: [8] Undefined index: extension C:\wamp\www\JxnuOJ\ThinkPHP\Extend\Library\ORG\Net\UploadFile.class.php 第 503 行.
+NOTIC: [8] Undefined index: extension C:\wamp\www\JxnuOJ\ThinkPHP\Extend\Library\ORG\Net\UploadFile.class.php 第 503 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000850s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000949s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.007603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007696s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000609s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000577s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000477s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002663s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001190s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001380s ]
+
+[ 2017-03-15T10:38:09+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showProblemLibrary
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002023s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002254s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.007263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004183s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.004070s ]
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: id C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 11 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) LIMIT 0,100   [ RunTime:0.000274s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001229s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001348s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014970s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000700s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000658s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000551s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002855s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000755s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2017-03-15T10:38:19+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001461s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001652s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005527s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003651s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000395s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: label_id C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.004071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 1   [ RunTime:0.000368s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000445s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003829s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 58 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001') ) AND ( `user_id` = 1 ) ORDER BY problem_id  [ RunTime:0.001911s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 64 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `label_info` [ RunTime:0.003178s ]
+SQL: SELECT * FROM `label_info`  [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `problem_label` [ RunTime:0.004358s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 51 ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 52 ) LIMIT 1   [ RunTime:0.000288s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001125s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001218s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015045s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001307s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000900s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000709s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004137s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000894s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-03-15T10:38:35+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblem/id/1000
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001240s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003498s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003763s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003826s ]
+SQL: SELECT * FROM `problem` WHERE ( `id` = 1000 ) LIMIT 1   [ RunTime:0.000433s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001125s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001230s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013005s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000777s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000681s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000588s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000745s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003025s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000865s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2017-03-15T10:38:41+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblem/id/1001
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001148s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005319s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003886s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003763s ]
+SQL: SELECT * FROM `problem` WHERE ( `id` = 1001 ) LIMIT 1   [ RunTime:0.000318s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001061s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001156s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011855s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000748s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000689s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000576s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003002s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000844s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2017-03-15T10:39:29+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001614s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001797s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001457s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003594s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000424s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001069s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001163s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010486s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000745s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000689s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000566s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002975s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000869s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-03-15T10:39:30+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001135s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001314s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003005s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000368s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001051s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001132s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011324s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000701s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000659s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000512s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002761s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000827s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2017-03-15T10:40:54+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister?username=admin&nickname=%E7%AE%A1%E7%90%86%E5%91%98&password=wuying&repassword=wuying&realname=%E5%90%B4%E8%BF%8E&email=738949377%40qq.com&school=%E6%B1%9F%E8%A5%BF%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6&major=%E7%89%A9%E8%81%94%E7%BD%91&motto=%E5%B8%8C%E6%9C%9B%E6%9C%89%E6%95%88
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001695s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001857s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001471s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003501s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003719s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000370s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001100s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001192s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011988s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000794s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000698s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000574s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003065s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000846s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2017-03-15T10:47:12+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister?username=admin&nickname=%E7%AE%A1%E7%90%86%E5%91%98&password=acmadmin&repassword=acmadmin&realname=%E5%90%B4%E8%BF%8E&email=738949377%40qq.com&school=%E6%B1%9F%E8%A5%BF%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6&major=&motto=
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002942s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003111s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003319s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000454s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001208s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001304s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011152s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000669s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000596s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000526s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002649s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000730s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2017-03-15T10:47:15+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister?username=admin&nickname=%E7%AE%A1%E7%90%86%E5%91%98&password=acmadmin&repassword=acmadmin&realname=%E5%90%B4%E8%BF%8E&email=738949377%40qq.com&school=%E6%B1%9F%E8%A5%BF%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6&major=&motto=
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001424s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001588s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001303s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.004957s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004111s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000419s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001088s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001183s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012527s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000823s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000712s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000597s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003192s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000958s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001089s ]
+
+[ 2017-03-15T10:48:46+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister?username=admin&nickname=%E7%AE%A1%E7%90%86%E5%91%98&password=acmadmin&repassword=acmadmin&realname=%E5%90%B4%E8%BF%8E&email=738949377%40qq.com&school=%E6%B1%9F%E8%A5%BF%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6&major=&motto=
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000860s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003672s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003485s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000373s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001370s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001465s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011095s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000568s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000475s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000467s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002391s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000813s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2017-03-15T10:56:29+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister?username=admin&nickname=%E7%AE%A1%E7%90%86%E5%91%98&password=acmadmin&repassword=acmadmin&realname=%E5%90%B4%E8%BF%8E&email=738949377%40qq.com&school=%E6%B1%9F%E8%A5%BF%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6&major=&motto=
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000705s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005925s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003678s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000443s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001336s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001487s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010726s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000640s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001115s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000556s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003712s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001452s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001642s ]
+
+[ 2017-03-15T10:58:43+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister?username=admin&nickname=%E7%AE%A1%E7%90%86%E5%91%98&password=acmadmin&repassword=acmadmin&realname=%E5%90%B4%E8%BF%8E&email=738949377%40qq.com&school=%E6%B1%9F%E8%A5%BF%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6&major=&motto=
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000765s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005958s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003660s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000423s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000904s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001010s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011897s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000505s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000443s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000303s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002192s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000762s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2017-03-15T10:59:53+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/register
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000705s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.004866s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003791s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000349s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000374s ]
+NOTIC: [8] Undefined index: mail C:\wamp\www\JxnuOJ\Home\Lib\Action\LoginAction.class.php 第 150 行.
+SQL: SELECT * FROM `user` WHERE ( `mail` = null ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: INSERT INTO `user` (`username`,`nickname`,`password`,`realname`,`school`,`major`,`motto`,`register_time`) VALUES ('admin','管理员','acmadmin','吴迎','','','',1489546793) [ RunTime:0.002575s ]
+NOTIC: [8] Undefined index: mail C:\wamp\www\JxnuOJ\Home\Lib\Action\LoginAction.class.php 第 171 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000988s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001135s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.007624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007804s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000772s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000817s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000662s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004117s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001409s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001562s ]
+
+[ 2017-03-15T10:59:54+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000802s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003643s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000408s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000780s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000878s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008150s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000414s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000362s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000256s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001822s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000843s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2017-03-15T11:02:04+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000910s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005453s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003515s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000402s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: label_id C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003988s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000381s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003608s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 58 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001') ) AND ( `user_id` = 1 ) ORDER BY problem_id  [ RunTime:0.000553s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 64 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `label_info` [ RunTime:0.003183s ]
+SQL: SELECT * FROM `label_info`  [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `problem_label` [ RunTime:0.003897s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 51 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 52 ) LIMIT 1   [ RunTime:0.000266s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000954s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001049s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014237s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000594s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000543s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000391s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002462s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000773s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2017-03-15T11:02:06+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000949s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006229s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003654s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000408s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000749s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000833s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010290s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000443s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000373s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000258s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001855s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000630s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2017-03-15T11:02:46+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/register
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000789s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003328s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003721s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000414s ]
+NOTIC: [8] Undefined index: mail C:\wamp\www\JxnuOJ\Home\Lib\Action\LoginAction.class.php 第 150 行.
+SQL: SELECT * FROM `user` WHERE ( `mail` = null ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: INSERT INTO `user` (`username`,`nickname`,`password`,`realname`,`school`,`major`,`motto`,`register_time`) VALUES ('admin','管理员','acmadmin','吴迎','','','',1489546966) [ RunTime:0.002023s ]
+NOTIC: [8] Undefined index: mail C:\wamp\www\JxnuOJ\Home\Lib\Action\LoginAction.class.php 第 171 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000708s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000832s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008206s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000459s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000440s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000308s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002151s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000762s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2017-03-15T11:02:47+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000689s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005915s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004641s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000312s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000837s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000928s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008896s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000528s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000415s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000291s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002085s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000711s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2017-03-15T11:03:55+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000667s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005517s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003625s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000303s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: label_id C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000348s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003797s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 58 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001') ) AND ( `user_id` = 1 ) ORDER BY problem_id  [ RunTime:0.000601s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 64 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `label_info` [ RunTime:0.003620s ]
+SQL: SELECT * FROM `label_info`  [ RunTime:0.000191s ]
+SQL: SHOW COLUMNS FROM `problem_label` [ RunTime:0.002602s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 51 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 52 ) LIMIT 1   [ RunTime:0.000217s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000995s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001126s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017070s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000518s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000390s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000269s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002137s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2017-03-15T11:03:56+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000708s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003835s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000327s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000797s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000893s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010485s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000609s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000588s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000442s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003024s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000867s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2017-03-15T11:09:14+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/register
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000950s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001069s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005980s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003811s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: mail C:\wamp\www\JxnuOJ\Home\Lib\Action\LoginAction.class.php 第 150 行.
+SQL: SELECT * FROM `user` WHERE ( `mail` = null ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: INSERT INTO `user` (`username`,`nickname`,`password`,`realname`,`school`,`major`,`motto`,`register_time`) VALUES ('admin','管理员','acmadmin','吴迎','','','',1489547351) [ RunTime:0.002080s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001867s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002158s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018720s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000985s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000989s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000756s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005025s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001786s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002004s ]
+
+[ 2017-03-15T11:09:15+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002412s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002701s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005463s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004063s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000331s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000804s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000942s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008873s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000739s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000746s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000393s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002824s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000689s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2017-03-15T11:21:46+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000917s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005858s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003704s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000370s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: label_id C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.004114s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000329s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.004085s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 58 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001') ) AND ( `user_id` = null ) ORDER BY problem_id  [ RunTime:0.000608s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 64 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `label_info` [ RunTime:0.003312s ]
+SQL: SELECT * FROM `label_info`  [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `problem_label` [ RunTime:0.003123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 51 ) LIMIT 1   [ RunTime:0.000371s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 52 ) LIMIT 1   [ RunTime:0.000325s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000934s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001036s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.014225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014373s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000606s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000537s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000396s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002429s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000767s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2017-03-15T11:21:47+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000996s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005939s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005218s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000344s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001001s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001136s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012221s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000777s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000583s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000327s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002596s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000616s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2017-03-15T11:22:19+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/register
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000635s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002560s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.002750s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003929s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000348s ]
+SQL: SELECT * FROM `user` WHERE ( `mail` = '738949377@qq.com' ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: INSERT INTO `user` (`username`,`nickname`,`password`,`realname`,`mail`,`school`,`major`,`motto`,`register_time`) VALUES ('admin','管理员','acmadmin','吴迎','738949377@qq.com','','','',1489548137) [ RunTime:0.003064s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000848s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000973s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.006279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006390s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000400s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000385s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000291s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001765s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000489s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2017-03-15T11:22:20+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001982s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002228s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001700s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005524s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004025s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000391s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001155s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001293s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009999s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000423s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000471s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000342s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001949s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000615s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2017-03-15T11:22:37+08:00 ] ERR: (ThinkException) 非法操作:register_html
+[ 2017-03-15T11:26:03+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000923s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005409s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003377s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000288s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: label_id C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 1   [ RunTime:0.000363s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000358s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003210s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 58 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001') ) AND ( `user_id` = null ) ORDER BY problem_id  [ RunTime:0.000474s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 64 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `label_info` [ RunTime:0.002810s ]
+SQL: SELECT * FROM `label_info`  [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `problem_label` [ RunTime:0.003148s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 51 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 52 ) LIMIT 1   [ RunTime:0.000323s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000858s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000948s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011805s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000516s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000439s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000336s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001970s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000688s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2017-03-15T11:26:04+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000672s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005767s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003860s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000378s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000783s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000857s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010120s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000466s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000628s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000339s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002276s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000589s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2017-03-15T11:26:36+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/register
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001130s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003344s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003585s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000358s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000348s ]
+SQL: SELECT * FROM `user` WHERE ( `mail` = '738949377@qq.com' ) LIMIT 1   [ RunTime:0.000406s ]
+SQL: INSERT INTO `user` (`username`,`nickname`,`password`,`realname`,`mail`,`school`,`major`,`motto`,`register_time`) VALUES ('admin','管理员','acmadmin','吴迎','738949377@qq.com','江西师范大学','','',1489548395) [ RunTime:0.002553s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002163s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002522s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.022522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022850s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000980s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001062s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000727s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004634s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001085s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2017-03-15T11:26:37+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003117s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003514s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001760s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.007889s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.008388s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000593s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.002441s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002748s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.023954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024172s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.001168s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001217s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000868s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006008s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.002498s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002738s ]
+
+[ 2017-03-15T11:26:52+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/regCheckMail/key/YiKKVJuqKs5HLYDOQeHtkIpT2nlNkHBo3DLpyFV4
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000697s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003972s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003890s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000379s ]
+SQL: SELECT `status` FROM `user` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: UPDATE `user` SET `status`=1 WHERE ( `id` = 9 ) [ RunTime:0.002357s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000730s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000823s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.006455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006560s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000441s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000411s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000300s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001868s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000751s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2017-03-15T11:26:53+08:00 ] ERR: (ThinkException) 非法操作:index
+[ 2017-03-15T11:28:35+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001599s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001869s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005343s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004653s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000343s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001031s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001151s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009440s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000673s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000602s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000303s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002286s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000646s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2017-03-15T11:29:46+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001321s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001507s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.002878s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003106s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000265s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000999s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001102s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012198s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000528s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000385s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000301s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001906s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000521s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000587s ]
+
+[ 2017-03-15T11:30:05+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showRegister
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000655s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005455s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003108s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000368s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000652s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000727s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009065s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000429s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000349s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000253s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001652s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000480s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-03-15T11:30:56+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showAllUserRank
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000908s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005444s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003745s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000389s ]
+NOTIC: [8] Undefined index: sort_param C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 125 行.
+SQL: DELETE FROM `user` WHERE ( `register_time` < 1489548596 ) AND ( `status` = 2 ) [ RunTime:0.000439s ]
+SQL: SELECT * FROM `user` WHERE (  ( `nickname` LIKE '%%' ) OR ( `solve_problem` LIKE '%%' ) ) AND ( `status` = 1 ) ORDER BY solve_problem desc  [ RunTime:0.000502s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001353s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001490s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: page C:\wamp\www\JxnuOJ\Home\Runtime\Cache\9b2f19f16e3c98462c29a4fca251988a.php 第 103 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012652s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000551s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000506s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000390s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002260s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000688s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2017-03-15T11:30:58+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Exam/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001130s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.002520s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003809s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `contest_list` [ RunTime:0.003012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `contest_list` LIMIT 1   [ RunTime:0.000228s ]
+SQL: SELECT * FROM `contest_list` ORDER BY id desc LIMIT 0,15   [ RunTime:0.000179s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\ExamAction.class.php 第 15 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001080s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001166s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012141s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000416s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000431s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000286s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001778s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000508s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2017-03-15T11:30:58+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000733s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003715s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003872s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000413s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003945s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT * FROM `user_problem` ORDER BY id desc LIMIT 0,15   [ RunTime:0.000434s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000937s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001028s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018321s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000462s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000421s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000304s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001878s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000565s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-03-15T11:31:00+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Exam/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001165s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005795s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003724s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `contest_list` [ RunTime:0.003732s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `contest_list` LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT * FROM `contest_list` ORDER BY id desc LIMIT 0,15   [ RunTime:0.000299s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\ExamAction.class.php 第 15 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000736s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011203s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000488s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000475s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000323s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002125s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000777s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2017-03-15T11:31:01+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showAllUserRank
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001127s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005911s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003585s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000376s ]
+NOTIC: [8] Undefined index: sort_param C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 125 行.
+SQL: DELETE FROM `user` WHERE ( `register_time` < 1489548601 ) AND ( `status` = 2 ) [ RunTime:0.000355s ]
+SQL: SELECT * FROM `user` WHERE (  ( `nickname` LIKE '%%' ) OR ( `solve_problem` LIKE '%%' ) ) AND ( `status` = 1 ) ORDER BY solve_problem desc  [ RunTime:0.000406s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000701s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000789s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: page C:\wamp\www\JxnuOJ\Home\Runtime\Cache\9b2f19f16e3c98462c29a4fca251988a.php 第 103 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.010914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010990s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000395s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000367s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000298s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001680s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000498s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2017-03-15T11:31:01+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000807s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006437s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003655s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000408s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: label_id C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003932s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000383s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000270s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003641s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 58 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001') ) AND ( `user_id` = null ) ORDER BY problem_id  [ RunTime:0.000529s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 64 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `label_info` [ RunTime:0.003239s ]
+SQL: SELECT * FROM `label_info`  [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `problem_label` [ RunTime:0.003821s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 51 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 52 ) LIMIT 1   [ RunTime:0.000275s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000726s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000814s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012387s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000463s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000419s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000292s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001875s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000737s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2017-03-15T11:31:02+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000709s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003840s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000380s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000988s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001106s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008416s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000450s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000434s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000302s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000659s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2017-03-15T11:31:03+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000897s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005920s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003537s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000459s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: label_id C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003399s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000364s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003278s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 58 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001') ) AND ( `user_id` = null ) ORDER BY problem_id  [ RunTime:0.000525s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 64 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `label_info` [ RunTime:0.003438s ]
+SQL: SELECT * FROM `label_info`  [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `problem_label` [ RunTime:0.003126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 51 ) LIMIT 1   [ RunTime:0.000329s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 52 ) LIMIT 1   [ RunTime:0.000332s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000550s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000631s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011449s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000448s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000382s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000274s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001768s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000521s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2017-03-15T11:31:04+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showAllUserRank
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000635s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005303s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003799s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000352s ]
+NOTIC: [8] Undefined index: sort_param C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 125 行.
+SQL: DELETE FROM `user` WHERE ( `register_time` < 1489548604 ) AND ( `status` = 2 ) [ RunTime:0.000338s ]
+SQL: SELECT * FROM `user` WHERE (  ( `nickname` LIKE '%%' ) OR ( `solve_problem` LIKE '%%' ) ) AND ( `status` = 1 ) ORDER BY solve_problem desc  [ RunTime:0.000410s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000982s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001100s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: page C:\wamp\www\JxnuOJ\Home\Runtime\Cache\9b2f19f16e3c98462c29a4fca251988a.php 第 103 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.013407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013485s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000846s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000603s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000329s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002621s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000538s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2017-03-15T11:31:05+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Exam/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000695s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005058s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `contest_list` [ RunTime:0.003545s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `contest_list` LIMIT 1   [ RunTime:0.000299s ]
+SQL: SELECT * FROM `contest_list` ORDER BY id desc LIMIT 0,15   [ RunTime:0.000214s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\ExamAction.class.php 第 15 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001180s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001291s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.012922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013043s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000661s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000505s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000384s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002591s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000620s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2017-03-15T11:31:05+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Judge/showRealTimeEvaluation
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000973s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005928s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003622s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000337s ]
+NOTIC: [8] Undefined index: problemId C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 10 行.
+NOTIC: [8] Undefined index: anthor C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: language C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 12 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\JxnuOJ\Home\Lib\Action\JudgeAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003779s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user_problem` LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT * FROM `user_problem` ORDER BY id desc LIMIT 0,15   [ RunTime:0.000376s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000827s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000916s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.016324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016435s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000531s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000601s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000476s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002661s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000610s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2017-03-15T11:33:45+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Admin/showAllUserRank
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000977s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.006032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004007s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000434s ]
+NOTIC: [8] Undefined index: sort_param C:\wamp\www\JxnuOJ\Home\Lib\Action\AdminAction.class.php 第 125 行.
+SQL: DELETE FROM `user` WHERE ( `register_time` < 1489548765 ) AND ( `status` = 2 ) [ RunTime:0.000407s ]
+SQL: SELECT * FROM `user` WHERE (  ( `nickname` LIKE '%%' ) OR ( `solve_problem` LIKE '%%' ) ) AND ( `status` = 1 ) ORDER BY solve_problem desc  [ RunTime:0.000429s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000969s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001062s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: page C:\wamp\www\JxnuOJ\Home\Runtime\Cache\9b2f19f16e3c98462c29a4fca251988a.php 第 103 行.
+INFO: Run ParseTemplate Behavior [ RunTime:0.012641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012758s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000754s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000513s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000402s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002493s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000662s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2017-03-15T11:33:46+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblemList
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000678s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005673s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003351s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: value C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 11 行.
+NOTIC: [8] Undefined index: label_id C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003603s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SELECT * FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000381s ]
+SQL: SELECT `id` FROM `problem` WHERE ( `title` LIKE '%%' ) OR ( `id` LIKE '%%' ) OR ( `description` LIKE '%%' ) LIMIT 0,50   [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `user_problem` [ RunTime:0.003968s ]
+NOTIC: [8] Use of undefined constant IN - assumed 'IN' C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 58 行.
+SQL: SELECT DISTINCT  `problem_id`,`judge_status` FROM `user_problem` WHERE ( `problem_id` IN ('1000','1001') ) AND ( `user_id` = null ) ORDER BY problem_id  [ RunTime:0.000492s ]
+NOTIC: [2] Invalid argument supplied for foreach() C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 64 行.
+NOTIC: [8] Undefined offset: 1000 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+NOTIC: [8] Undefined offset: 1001 C:\wamp\www\JxnuOJ\Home\Lib\Action\IndexAction.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `label_info` [ RunTime:0.003226s ]
+SQL: SELECT * FROM `label_info`  [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `problem_label` [ RunTime:0.003590s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 51 ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `problem_label` WHERE ( `label_id` = 52 ) LIMIT 1   [ RunTime:0.000256s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000794s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000901s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.013107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013210s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000455s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000401s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000285s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001806s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000527s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2017-03-15T11:33:47+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/showProblem/id/1000
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005238s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003614s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `problem` [ RunTime:0.003291s ]
+SQL: SELECT * FROM `problem` WHERE ( `id` = 1000 ) LIMIT 1   [ RunTime:0.000358s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000610s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000683s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011121s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000469s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000356s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000253s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001675s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000496s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000570s ]
+

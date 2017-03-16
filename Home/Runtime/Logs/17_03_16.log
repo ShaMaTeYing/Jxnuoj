@@ -1,0 +1,175 @@
+[ 2017-03-16T00:24:53+08:00 ] ERR: (ThinkException) Access denied for user 'root'@'localhost' (using password: YES)
+[ 2017-03-16T00:25:24+08:00 ] 0.0.0.0 /JxnuOJ/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.012530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.004931s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006051s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.001835s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001701s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001842s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.088389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088514s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.004218s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.007173s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.011977s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.002534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026441s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.013984s ]
+INFO: [ view_end ] --END-- [ RunTime:0.014176s ]
+
+[ 2017-03-16T00:27:03+08:00 ] 0.0.0.0 /JxnuOJ/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003103s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000379s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000791s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000874s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.008824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008924s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000473s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000428s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000310s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001990s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000557s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2017-03-16T00:49:06+08:00 ] 0.0.0.0 /JxnuOJ/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005732s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003979s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000559s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000895s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001005s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.011232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011383s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000975s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000903s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000744s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.001566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004617s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001035s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001207s ]
+
+[ 2017-03-16T00:49:47+08:00 ] 0.0.0.0 /JxnuOJ/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.005081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003788s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000308s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000754s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000900s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.009329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009466s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000469s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000377s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000369s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001944s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000539s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2017-03-16T14:11:49+08:00 ] 0.0.0.0 /JxnuOJ/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003697s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.004664s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.003319s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003753s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.002310s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.001701s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001793s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.018849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018947s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000904s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.001125s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000744s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003976s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.001229s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001305s ]
+
+[ 2017-03-16T14:11:52+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Login/showLogin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003811s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003951s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003610s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000401s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000836s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000913s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.010401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010493s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000445s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000384s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000246s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001734s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000529s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-03-16T14:11:54+08:00 ] 0.0.0.0 /JxnuOJ/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000625s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `black_user` [ RunTime:0.003405s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `black_user` WHERE ( `ip` = '0.0.0.0' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004645s ]
+SQL: SELECT * FROM `user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001378s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:0.000712s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000821s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:0.007585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007711s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:0.000455s ]
+INFO: Run TokenBuild Behavior [ RunTime:0.000422s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:0.000245s ]
+INFO: Run ShowRuntime Behavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001862s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:0.000666s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000739s ]
+
