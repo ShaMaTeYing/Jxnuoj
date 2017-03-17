@@ -6,6 +6,110 @@ python在Ubuntu14.04的环境下运行。
 Ubuntu需要实现安装lamp和各种语言编译器。
 没时间解释啦，我要上车啦，至于具体怎么部署，以及一步步安装环境，以后会说得惹！！！
 
+------------
+项目结构，随便写写
+
+----.git .settings  git自动生成的文件夹
+
+	code 存放用户题库提交代码的文件夹
+		|---admin 用户admin的代码文件
+		|---wuying 用户wuying的代码文件
+			
+	contest 存放用户比赛提交代码的文件夹
+		|---code 存放用户比赛提交代码的文件夹
+	Home 项目文件夹
+		|---Common 存放全局函数的文件夹
+			|---common.php 自己编写的全局函数的存放在这里
+		|---Conf 配置文件夹
+			|---config.php 配置文件喽，比如设置数据库连接的一些信息
+		|---Lang 不懂干嘛的，木有用过它
+		|---Lib 很重要的文件夹
+			|---Action 后台全在这里操控
+				|---AdminAction.class.php 后台管理模块
+				|---BaseAction.class.php 基础类，所有人继承它
+				|---ExamAction.class.php 比赛类
+				|---IndexAction.class.php 题库类
+				|---JudgeAction.class.php 评测类
+				|---LoginAction.class.php 登录类
+			|---Behavior 没用过，不清楚干嘛的
+			|---Model 据说是用来写MVC中的M的，李晓科大大没教我，说是Action够用了，所以，我也不会用
+			|---ORG 不懂
+			|---Widget 不懂这个文件
+		|---Runtime 缓存文件夹，不用管它
+		|---Tpl 前端页面文件夹
+			|---Admin 	管理模块的所有页面
+				|---showAddproblem.html 显示添加问题页面
+				|---showAllUserRank.html 显示所有用户排名的页面
+				|---showLoginMessage.html 显示登录信息的页面
+				|---showModifyProblem.html 显示修改问题的页面
+				|---showProblemLibrary.html 显示所有问题的页面
+				|---showUpload.html 显示上传数据的页面	
+				|---showUserMessage.html 显示用户信息的页面
+			|---Exam 比赛模块的所有页面
+				|---index.html 比赛主页，显示比赛列表
+				|---showCode.html 显示代码的页面
+				|---showProblem.html 显示问题详情的页面
+				|---showProblemList.html 显示问题列表的页面
+				|---showStatus.html 显示比赛实时评测的页面
+				|---showSubmit.html 显示提交问题的页面
+			|---Index 题库模块的所有页面
+				|---index.html 显示主页
+				|---showModifyUserMessage.html 显示修改用户信息的页面
+				|---showProblem.html 显示问题详情的页面
+				|---showProblemList.html 显示问题列表的页面
+				|---showSubmit.html 显示提交问题的页面
+				|---showUserMessage.html 显示用户信息的页面
+			|---Judge 评测模块的所有页面
+				|---showRealTimeEvaluation.html 显示评测页面
+				|---showUserCode.html 显示用户代码
+			|---Login 登录模块的所有页面
+				|---showGetMail.html 显示输入邮箱
+				|---showLogin.html 显示登录页面
+				|---showModifyPassword.html 显示修改密码页面
+				|---showRegister.html 显示注册页面
+			|---Public 公共页面
+				|---base.html 基础公共模板,所有页面都可以继承重载它。
+				|---footer.html 模板底部页面
+				|---header.html 模板头部页面,旧的
+				|---head1.html 模板头部页面
+		
+	problems 存放题目评测数据的文件夹
+		|---1000 题目ID为1000的文件
+				|---in 输入文件
+				|---out 输出文件
+		|---XXXX 题目ID为XXXX的文件
+				|---in 输入文件
+				|---out 输出文件
+			......
+	Public 存放js,css,fonts等文件的文件夹
+		|---css 存放项目的所有css文件
+		|---fonts 所有字体文件
+		|---images 存放项目的所有图片
+		|---js 存放项目的所有js文件
+	ThinkPHP ThinkPHP包，不用看它，相当于里面都是库函数
+	.buildpath .project 项目自动生成的，我也不知道什么意思，不用管它
+	index.php 项目入口文件，第一次运行会生成项目名称之类的。
+	judge.py 判题服务程序
+	judge111.py 旧版本的判题服务程序
+	jxnuoj  旧版本的判题服务程序
+	jxnuoj.sql 数据库备份文件
+	jxnuoj1  旧版本的判题服务程序
+	log.txt 也许是日志文件吧，我也不知道，不用管它
+	README.md 你现在看的东西就是我
+
+
+	
+
+	
+ 
+
+
+----------
+
+如何部署呀？
+如果不考虑判题的话，可以运行在Windows上。需要先安装wamp，把JxnuOJ整个文件夹放在www目录下。接着再下载个navicat管理数据库。比如要运行这个项目，先要创建数据库，首先打开navicat,新建个数据库叫做"jxnuoj"，然后就可以把jxnuoj.sql导入进去了。然后在浏览器里输入localhost/JxnuOJ就可以了。
+整个项目要完全运行的话，就要在Linux环境下跑。先说下大概的流程吧，坑点很多，以后再细说。我这里用的是Ubuntu 14.04.然后装个lamp，lamp自己去看教程。把项目拷贝到www/html目录下(注意跟Windows的差异，Windows是www目录下)，再装个phpmyadmin。同样要先创建数据库。然后在浏览器输入localhost/JxnuOJ即可。如果发现没有用，那就打开配置文件config.php编辑下数据库的密码之类的信息。config.php在哪里可以看下下面的项目结构。然后再运行下judge.py，开启判题服务，就可以判题了。
+
 ----------
 这里仔细说下判题部分的实现，判题可是这个系统的核心，但是实现这个功能的资料很难找啊！！！别人家OJ上也没有仔细说啊！！！之前写OJ的时候是各种找人家的开源项目想找判题部分的源码出来观摩，可惜往往连人家判题代码写在哪个文件都找不到！！！很无助，很可怜啊，有木有！！！下面我就说得仔细点，给大家借鉴借鉴，少走弯路。下面切入正题！！！
 
