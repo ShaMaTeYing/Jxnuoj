@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="__PUBLIC__/css/index.css" />
 	<link rel="stylesheet" href="__PUBLIC__/css/showProblemList.css" />
 
-		<title>JxnuOJ</title>
+		<title>江西师范大学OJ</title>
 	</head>	
 	<body>
 		
@@ -20,7 +20,7 @@
 		  <div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-			  <a class="navbar-brand" href="__APP__/Index/index">TCOJ</a>
+			  <a class="navbar-brand" href="__APP__/Index/index">江西师范大学OJ</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -109,12 +109,13 @@
 				</div>
 				<table class="table table-hover">
 					<?php if(is_array($labelData)): $i = 0; $__LIST__ = $labelData;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-							<td>
+						<?php if(($vo["problem_number"]) > "0"): ?><td>
 								<a href="__APP__/Index/showProblemList/label_id/<?php echo ($vo["label_id"]); ?>">
 									<?php echo ($vo["label_name"]); ?>
 								</a>
 							</td>
-							<td><?php echo ($vo["problem_number"]); ?></td>
+							
+							<td><?php echo ($vo["problem_number"]); ?></td><?php endif; ?>
 						</tr><?php endforeach; endif; else: echo "" ;endif; ?>
 				</table>
 			</div>
@@ -127,9 +128,9 @@
 		<hr>
 		<div class="row footer-bottom">
           <ul class="list-inline text-center">
-            <li>童程教育OI在线评测系统</li>
+            <li>江西师范大学ACM在线评测系统</li>
             <li><a href="http://www.miitbeian.gov.cn" target="view_window" style="color: #337ab7;">赣ICP备16003914号</a></li>
-			<li>Copyright &copy; 2016-  author:童程教育</li>
+			<li>Copyright &copy; 2016-  author:吴迎</li>
           </ul>
         </div>
 	</div>

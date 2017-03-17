@@ -56,12 +56,15 @@
 				<table class="table table-hover">
 					<volist name='labelData' id='vo'>
 						<tr>
+						<gt name="vo.problem_number" value="0">
 							<td>
 								<a href="__APP__/Index/showProblemList/label_id/<{$vo.label_id}>">
 									<{$vo.label_name}>
 								</a>
 							</td>
+							
 							<td><{$vo.problem_number}></td>
+						</gt>
 						</tr>
 					</volist>
 				</table>

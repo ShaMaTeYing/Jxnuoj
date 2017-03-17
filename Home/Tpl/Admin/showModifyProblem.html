@@ -6,52 +6,45 @@
 <block name="main">
 	<form action='<{:U("Admin/modifyProblemData")}>' method='post' enctype="multipart/form-data">
 		<div class="content">
-			<div class="creat">添加问题</div>
-			<div class="text"> 
-				问题ID<input type="text" name="id" value="<{$data.id}>"/>
+			
+			<div class="creat">修改问题</div>
+			<div class="text">
+				<input type="hidden" name="id" value="<{$data.id}>">
 			</div>
+			 
 			<div class="Limit"> 
 				
 				时间限制<input type="text" name="time_limit" value="<{$data.time_limit}>"/>ms
 				内存限制<input type="text" name="memory_limit" value="<{$data.memory_limit}>"/>K
 				输出限制<input type="text" name="output_limit" value="<{$data.output_limit}>"/>K
 			</div>
-			<div class="text">
-				作者<input type="text" name="author" value="<{$data.author}>"/>
+			<div class="text">作者<input type="text" name="author" value="<{$data.author}>"/>
 			</div>
-			<div class="text"> 
-				来源<input type="text" name="source" value="<{$data.source}>"/>
+			<div class="text">来源<input type="text" name="source" value="<{$data.source}>"/>
 			</div>
-			<div class="text">
-				标题<input type="text" name="title" value="<{$data.title}>"/>
+			<div class="text">标题<input type="text" name="title" value="<{$data.title}>"/>
 			</div>
-			<div class="text">
-				标签<input type="text" name="title" value="<{$data.label}>"/>
+			<div class="text">标签<input type="text" name="label" value="<{$labelData}>"/>
 			</div>
 			<div class="textarea"> 
 				问题描述
-				<textarea name="description" ><{$data.description}>
-				</textarea>
+				<textarea name="description" ><{$data.description}></textarea>
 			</div>
 			<div class="textarea"> 
 				输入格式
-				<textarea name="input" ><{$data.input}>
-				</textarea>
+				<textarea name="input" ><{$data.input}></textarea>
 			</div>
 			<div class="textarea"> 
 				输出格式
-				<textarea name="output" ><{$data.output}>
-				</textarea>
+				<textarea name="output" ><{$data.output}></textarea>
 			</div>
 			<div class="textarea"> 
 				输入样例
-				<textarea name="sample_input"><{$data.sample_input}>
-				</textarea>
+				<textarea name="sample_input"><{$data.sample_input}></textarea>
 			</div>
 			<div class="textarea"> 
 				输出样例
-				<textarea name="sample_output" ><{$data.sample_output}>
-				</textarea>
+				<textarea name="sample_output" ><{$data.sample_output}></textarea>
 			</div>
 
 

@@ -14,7 +14,7 @@ class IndexAction extends BaseAction {
 		//dump($labelId);
 		if($labelId){
 			$list=M("table")->table('problem a,problem_label b')
-			->where("a.id=b.problem_id and b.label_id=".$labelId)
+			->where("a.id=b.problem_id and b.label_id=".$labelId." and b.status=0")
 			->select();
 		
 			//dump($list);
@@ -22,17 +22,22 @@ class IndexAction extends BaseAction {
 			//$User = M('problem'); // 实例化User对象
 			import('ORG.Util.Page');// 导入分页类
 			$count = M("table")->table('problem a,problem_label b')
-			->where("a.id=b.problem_id and b.label_id=".$labelId)->count();// 查询满足要求的总记录数
+			->where("a.id=b.problem_id and b.label_id=".$labelId." and b.status=0")->count();// 查询满足要求的总记录数
 			$Page  = new Page($count,50);// 实例化分页类 传入总记录数和每页显示的记录数
+			
 			$show  = $Page->show();// 分页显示输出
+			
 			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
 			$list = M("table")->table('problem a,problem_label b')
-			->where("a.id=b.problem_id and b.label_id=".$labelId)->limit($Page->firstRow.','.$Page->listRows)->select();
-			
+			->where("a.id=b.problem_id and b.label_id=".$labelId." and b.status=0")->limit($Page->firstRow.','.$Page->listRows)
+			->order('problem_id')
+			->select();
+			//dump($list);
 			$listIds = M("table")->table('problem a,problem_label b')
 			->where("a.id=b.problem_id and b.label_id=".$labelId)
 			->limit($Page->firstRow.','.$Page->listRows)
-			->getField('id',true);
+			->getField('problem_id',true);
+			//dump($listIds);
 		}
 		else {
 			$where['title']  = array('like','%'.$value.'%');
@@ -49,17 +54,21 @@ class IndexAction extends BaseAction {
 			$show  = $Page->show();// 分页显示输出
 			// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
 			$list = $User->where($where)->limit($Page->firstRow.','.$Page->listRows)->select();
+		//	dump($Page);
 			$listIds = $User
 			->where($where)
 			->limit($Page->firstRow.','.$Page->listRows)
 			->getField('id',true);
+			//dump($listIds);
 		}		
+		//dump($listIds);
 		$userDo = M('user_problem')
 			->where(array('problem_id'=>array(IN,$listIds),'user_id'=>$userinfo['id']))
 			->distinct('judge_status')
 			->order('problem_id')
 			->field('problem_id,judge_status')
 			->select();
+		//dump($userDo);
 		$userDoNew = array();
         foreach($userDo as $k => $v){
 			if($v['judge_status'] == 0 || $userDoNew[$v['problem_id']] > 0 
@@ -67,9 +76,12 @@ class IndexAction extends BaseAction {
 				$userDoNew[$v['problem_id']] = $v['judge_status'];
 			}
 		}
+		//dump($userDoNew);
 		//dump($list);
 		foreach($list as $k1 => $v1){
-			$list[$k1]['judge_status'] = $userDoNew[$v1['id']];
+			if($userDoNew[$v1['problem_id']]==null)
+				$list[$k1]['judge_status'] = $userDoNew[$v1['id']];
+			else $list[$k1]['judge_status'] =$userDoNew[$v1['problem_id']];
 			if($list[$k1]['id']<1000) $list[$k1]['id']=$list[$k1]['problem_id'];
 		}
 		//dump($list);
@@ -79,12 +91,12 @@ class IndexAction extends BaseAction {
 		
 		//提取标签数据
 		$Label=M('label_info');
-		$LabelAllData=$Label->select();
+		$LabelAllData=$Label->where("status=0")->select();
 		$labelData=array(array());
 		foreach($LabelAllData as $k => $v){
 			$labelData[$k]['label_name']=$v['label_name'];
 			$labelData[$k]['label_id']=$v['id'];
-			$tmp=M('problem_label')->where(array('label_id'=>$v['id']))->count();
+			$tmp=M('problem_label')->where(array('label_id'=>$v['id'],'status'=>0))->count();
 			if($v['status']){
 				$labelData[$k]['problem_number']=0;
 			}

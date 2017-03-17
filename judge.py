@@ -313,8 +313,8 @@ def Judge(contest_id,sourcefile,problem,TIME_LIMIT,MEMORY_LIMIT):
     debug(outputExpected)
     a = open(outfile,'r')
     codecode = a.read()
-    debug(codecode)
-    if len(codecode) >= 5000000:
+    # debug(len(codecode))
+    if len(codecode) >= 10000000:
         debug( "OLE")
         answer['judge_status'] = 6
         return answer

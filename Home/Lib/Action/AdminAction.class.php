@@ -102,17 +102,71 @@ class AdminAction extends BaseAction {
 	}
 	/*显示修改题目界面*/
 	public function showModifyProblem(){
+		
 		$id=$_GET['id'];
 		$data=M('problem')->where('id='.$id)->find();
+		//dump($data);
+		$list=M("table")->table('label_info a,problem_label b')
+			->where("a.id=b.label_id and b.problem_id=".$data['id']." and b.status=0")
+			->select();
+		//dump($list);
+		
+
+		foreach($list as $key => $value){
+			
+			$labelData=$labelData.$list[$key]['label_name'].";";
+		}
+		//dump($labelData);
+		$labelData=rtrim($labelData,';');
+		//dump($labelData);
+		
+		$this->assign('labelData',$labelData);
 		$this->assign('data',$data);
 		$this->display();
 	}
 	/*修改题目*/
 	public function modifyProblemData(){
+		//dump($_POST);
+		
 		foreach($_POST as $key=>$value){
 			$_POST[$key]=htmlspecialchars($value);
 		}
-		
+		$data=$_POST;
+		//设置该题目对应的标签不可用
+		$labelData=M('problem_label')->where('problem_id='.$data['id'])->select();
+		foreach($labelData as $key => $value){
+			$labelData[$key]['status']=1;
+			M('problem_label')
+				->where('id='.$labelData[$key]['id'])
+				->save($labelData[$key]);
+		}
+		//dump($labelData);
+		//提取出修改后的所有标签
+		$labelString=$data['label'];
+		$labelData=explode(";", $labelString);
+		//dump($labelData);
+		for($i=0;$i<count($labelData);$i++){
+			$where['label_name']=$labelData[$i];
+			$cnt=M('label_info')->where($where)->count();
+			if($cnt==0){
+				$mydata['label_name']=$labelData[$i];
+				$mydata['status']=0;
+				M('label_info')->data($mydata)->add();
+			}
+			$labelId=M('label_info')->where($where)->find();
+			//$problemId=$User->max('id');
+			$problemLabelData['problem_id']=$data['id'];
+			$problemLabelData['label_id']=$labelId['id'];
+			$res=M('problem_label')->where($problemLabelData)->count();
+			if($res){
+				$myData['status']=0;
+				M('problem_label')->where($problemLabelData)->save($myData);
+			}else {
+				M('problem_label')->data($problemLabelData)->add();
+			}
+				
+		}
+		//die;
 		$count=M('problem')->where('id='.$_POST['id'])->save($_POST);
 		if($count>0){
 			$this->success('success!','showProblemLibrary');
