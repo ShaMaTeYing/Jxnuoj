@@ -46,11 +46,11 @@
 						 <ul class="dropdown-menu">
 						  
 							<li><a href="__APP__/Index/showUserMessage/id/<?php echo ($data["id"]); ?>"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-							&nbsp;信息</a></li>
+							&nbsp;我的信息</a></li>
 							<?php if(($data["root"]) > "0"): ?><li><a href="__APP__/Admin/showProblemLibrary"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;&nbsp;题目管理</a></li>
 							<li><a href="__APP__/Admin/showLoginMessage"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;&nbsp;登录管理</a></li><?php endif; ?>
-							<li><a href="__APP__/Admin/showUserMessage"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>&nbsp;&nbsp;设置</a></li>
-							<li><a href="__APP__/Login/logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;退出</a></li>
+							<li><a href="__APP__/Admin/showUserMessage"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>&nbsp;&nbsp;用户管理</a></li>
+							<li><a href="__APP__/Login/logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;退出登录</a></li>
 							<li role="separator" class="divider"></li>
 					  </ul>
 						  
@@ -95,7 +95,7 @@
 						<td><?php echo viewAdd($vo['id'],'0');?> </td>
 						<td> <?php echo ($vo["title"]); ?>  </td>
 						<td>
-						
+							<a href="__APP__/Admin/reJudge/id/<?php echo ($vo["id"]); ?>">重判</a>|
 							<a href="__APP__/Admin/showModifyProblem/id/<?php echo ($vo["id"]); ?>">编辑</a>|
 							<a href='__APP__/Index/showProblem/id/<?php echo ($vo["id"]); ?>'>查看</a>|
 							<a href="__APP__/Admin/showUpload/id/<?php echo ($vo["id"]); ?>/title/<?php echo ($vo["title"]); ?>">数据</a>|

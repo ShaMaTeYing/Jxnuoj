@@ -175,19 +175,35 @@ class IndexAction extends BaseAction {
 	
 	}
 	public function showModifyUserMessage(){
+		$userinfo=session('userinfo');
+		$this->assign('userinfo',$userinfo);
 		$this->display();
 	}
 	public function modifyUserMessage(){
 		$userdata=session('userinfo');
-		if($userdata['password']!=$_POST['lastpassword']){
-			$this->error("旧密码错误,请重新输入!");
+		if($userdata['password']!=$_POST['password']){
+			$this->error("密码错误,请重新输入!");
 		}
-		$data['password']=$_POST['newpassword'];
-		$data['school']=$_POST['school'];
-		$data['motto']=$_POST['motto'];
+		if($_POST['major']) $data['major']=$_POST['major'];
+		if($_POST['school']) $data['school']=$_POST['school'];
+		if($_POST['motto']) $data['motto']=$_POST['motto'];
+		if($_POST['nickname']) {
+			$data['nickname']=$_POST['nickname'];
+			$userdata['nickname']=$data['nickname'];
+			session('userinfo',$userdata);
+		}
 		$count=M('user')->where('id='.$userdata['id'])->save($data);
 		if($count>0){
-			$this->success('修改成功',U('Index/problem_list'));
+			
+			if($data['nickname']){
+				$newNameData['nickname']=$data['nickname'];
+				$where['nickname']=M('user_problem')
+									->where('user_id='.$userdata['id'])
+									->find()['nickname'];
+				M('user_problem')->where($where)->save($newNameData);
+				
+			}
+			$this->success('修改成功',U('Index/showProblemList'));
 		}
 	}
 	

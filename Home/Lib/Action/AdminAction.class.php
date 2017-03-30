@@ -227,7 +227,7 @@ class AdminAction extends BaseAction {
 		$map['_complex'] = $where;
 		//$map['status']  = 1;
 		$userinfo=session('userinfo');
-		$map['root']=array('lt',$userinfo['root']);
+		$map['root']=array('elt',$userinfo['root']);
 
 		$userMessage=M('user')->where($map)->select();
 		//dump($userMessage);
@@ -243,5 +243,54 @@ class AdminAction extends BaseAction {
 			$this->success('success!',U('Admin/showUserMessage'));
 		}
 	}
+	public function reJudge(){
+		//dump($_GET);
+		$data['judge_status']=8;
+		$allJudgeRecord=M('user_problem')->where('problem_id='.$_GET['id'])->save($data);
+		$this->success('success!',U('Admin/showProblemLibrary'));
+	}
+	public function showUserRecord(){
+		//dump($_GET);
+		//dump($id);
+		$userinfo = session('userinfo');
+		$problemId=$_POST['problemId'];
+		
+		$language=$_POST['language'];
+		$judgeResults=$_POST['status'];
+		if($_GET['id']) $where['user_id']=$_GET['id'];
+		else $where['user_id']=$_POST['id'];
+		if($language) $where['language']=$language;
+		if($judgeResults) $where['judge_results']=$judgeResults;
+		if($problemId) $where['problem_id']  = $problemId;
+		
+		//dump(M('user_problem')->where($where)->select());
+		$where['_logic'] = 'and';
+		//dump($where);
+		$User = M('user_problem'); // 实例化User对象
+		import('ORG.Util.Page');// 导入分页类
+		$count = $User->where($where)->count();// 查询满足要求的总记录数
+		$Page  = new Page($count,15);// 实例化分页类 传入总记录数和每页显示的记录数
+		$show  = $Page->show();// 分页显示输出
+		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+		$list = $User->where($where)->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+		//dump($count);
+		//$tiaoshi="吴迎";
+		//dump($tiaoshi);
+		//dump($Page);
 	
+		//$list['username']=$userinfo;
+		$this->assign('list',$list);// 赋值数据集
+		$this->assign('page',$show);// 赋值分页输出
+		$userinfo = session('userinfo');
+		$this->myId = $userinfo['id'];
+		$this->userId=$where['user_id'];
+		$this->myRoot=$userinfo['root'];
+		$this->display(); // 输出模板
+	}
+	public function userReJudge(){
+		$data['judge_status']=8;
+		$allJudgeRecord=M('user_problem')->where('id='.$_GET['id'])->save($data);
+		//$this->showUserMessage();
+		$this->success('success!',U('Admin/showUserRecord',array('id'=>$_GET['uid'])));
+	}
 }

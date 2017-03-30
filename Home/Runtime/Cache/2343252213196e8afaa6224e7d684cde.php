@@ -46,11 +46,11 @@
 						 <span class="caret"></span></a>
 						 <ul class="dropdown-menu">
 						  
-							<li><a href="__APP__/Index/showUserMessage/id/<?php echo ($data["id"]); ?>"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;我的信息</a></li>
-							<li><a href="__APP__/Index/showModifyUserMessage/id/<?php echo ($data["id"]); ?>"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;修改信息</a></li>
+							<li><a href="__APP__/Index/showUserMessage/id/<?php echo ($data["id"]); ?>"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+							&nbsp;我的信息</a></li>
 							<?php if(($data["root"]) > "0"): ?><li><a href="__APP__/Admin/showProblemLibrary"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;&nbsp;题目管理</a></li>
-							<li><a href="__APP__/Admin/showLoginMessage"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;&nbsp;登录管理</a></li>
-							<li><a href="__APP__/Admin/showUserMessage"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>&nbsp;&nbsp;用户管理</a></li><?php endif; ?>
+							<li><a href="__APP__/Admin/showLoginMessage"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;&nbsp;登录管理</a></li><?php endif; ?>
+							<li><a href="__APP__/Admin/showUserMessage"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>&nbsp;&nbsp;用户管理</a></li>
 							<li><a href="__APP__/Login/logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;退出登录</a></li>
 							<li role="separator" class="divider"></li>
 					  </ul>
@@ -65,12 +65,12 @@
 		
 		
 	<div class="judge">
-		<div class="judge-status">实时评测状态</div>
+		<div class="judge-status">提交记录</div>
 		<div class="search">
-			<form action="__APP__/Judge/showRealTimeEvaluation" method="post"> 
-				问题ID<input type="text" name="problemId" />
-				昵称<input type="text" name="anthor" />
-				语言：
+			<form action="__APP__/Admin/showUserRecord" method="post"> 
+				问题ID:<input type="text" name="problemId" />
+				<input type="hidden" name="id" value="<?php echo ($userId); ?>">
+				语言:
 				<select name="language">
 					<option value="C++">C++</option>
 					<option value="C">C</option>
@@ -99,6 +99,7 @@
 					<th>代码长度</th>
 					<th>语言</th>
 					<th>昵称</th>
+					<th>操作</th>
 				</tr>
 				<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 						<td><?php echo ($vo["id"]); ?></td>
@@ -153,6 +154,9 @@
 							<a href="__APP__/Index/showUserMessage/id/<?php echo ($vo["user_id"]); ?>">
 							<?php echo ($vo["nickname"]); ?>
 							</a>
+						</td>
+						<td>
+							<a href="__APP__/Admin/userReJudge/id/<?php echo ($vo["id"]); ?>/uid/<?php echo ($vo["user_id"]); ?>">重判</a>
 						</td>
 					</tr><?php endforeach; endif; else: echo "" ;endif; ?>	
 			</table>

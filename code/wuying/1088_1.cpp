@@ -1,1 +1,0 @@
-class="table table-bordered"

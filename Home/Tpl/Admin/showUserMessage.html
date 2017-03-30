@@ -31,6 +31,7 @@
 					<th>学校</th>
 					<th>专业</th>
 					<th>操作</th>
+					<th>查看</th>
 				</tr>
 				<volist name='userMessage' id='vo'>
 					<tr>
@@ -78,7 +79,15 @@
 								</eq>
 							</eq>
 						</td>
+						<td>
+							<a href="__APP__/Admin/showUserRecord/id/<{$vo.id}>">
+										提交记录
+									</a>
+							
+							
+						</td>
 					</tr>
+					
 				</volist>
 			</table>
 		
