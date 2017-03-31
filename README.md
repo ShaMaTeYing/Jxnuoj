@@ -7,6 +7,21 @@ Ubuntu需要实现安装lamp和各种语言编译器。
 没时间解释啦，我要上车啦，至于具体怎么部署，以及一步步安装环境，以后会说得惹！！！
 
 ------------
+关于环境：
+Apache2(版本号：2.4.4)
+Mysql(版本号：5.6.12)
+PHP(版本号：5.4.12)
+如果是在Windows环境下，直接安装wamp就好了。
+如果是在Linux环境下，例如Ubuntu，那最好装个Ubuntu 14.04，因为如果装Ubuntu 16.04的话，系统自带PHP7，而我们要用的是PHP5，会产生不兼容的情况。系统搞定了，就去装个lamp，Ubuntu 14.04 lamp安装教程：[http://blog.csdn.net/wangnan537/article/details/47795037](http://blog.csdn.net/wangnan537/article/details/47795037)
+如果是苹果系统，就装个mamp，注意要装PHP5，不然会不兼容！小二二就因为不知道什么环境，所以被坑得不要不要的。
+
+然后thinkphp 的版本号是3.1.2
+python的版本是2.7
+编辑前端后台等等，如.html,.css,.js,.php文件建议使用HBuilder(Windows环境、Mac环境)
+编辑python建议使用pycharm(Windows，Linux，Mac都有)
+编辑数据库建议使用navicat(Windows，Linux，Mac都有)
+
+------------
 项目结构，随便写写
 
 ----.git .settings  git自动生成的文件夹
@@ -124,6 +139,5 @@ Ubuntu需要实现安装lamp和各种语言编译器。
 6. **判断用户程序输出文件**先判断用户输出数据文件是否过大，和判断代码文件是否过大是一样的做法，如果过大，就结束程序，报错“Output Limit Exceeded”。否则继续执行接下来的程序，把测试数据的输出文件和用户程序的输出文件比较，如果完全一致，就结束程序，返回“Accepted”,否则就把两个文件的空格，制表符，换行，回车，都替换了，再判断两个文件是否一致，如果一致，就报错“Presentation Error”，否则报错“Wrong Answer”。
 7. **写回数据库**，然后把评测状态，所用时间，所用内存等状态写回数据库对应的记录即可。
 ----
-#有问题吗？？？#
-
+# 有问题吗？？？ #
 
